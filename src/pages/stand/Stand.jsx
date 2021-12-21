@@ -7,9 +7,10 @@ export default function Stand() {
       <div className="stand">
         <div className={classes.first_part}>
         <Navbar/>
+        stand
         </div>
       
-         stand
+       
     </div>
       
     
