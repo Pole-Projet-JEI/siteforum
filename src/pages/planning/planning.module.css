@@ -1,0 +1,11 @@
+.first_part
+{
+  background: url('back.jpg')  ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 0px;
+  height: 100px;
+  
+
+}
