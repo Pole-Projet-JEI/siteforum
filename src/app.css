@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+:root {
+  --white-color:#fff;
+  --black-color:#0000;
+  --primary-color:#01212E;
+  --secondary-color:#00C1C1;
+  --optional-color:#F9138F;
+  /* gray colors for parag*/
+
+  --parag-color-dark:#514D4D;
+  --parag-color-light:#A39D9D;
+
+}
 * {
   font-family: "Poppins";
   margin: 0;

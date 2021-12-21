@@ -5,7 +5,7 @@ export default function Landing(props) {
     <div className={classes.landing}>
      
       <h3 className={classes.subtitle}>{props.subtitle}</h3>
-      <h2 className={classes.title}>{props.title}</h2>
+      <h2 className={classes.title} style={{color:props.color}}>{props.title}</h2>
       <svg >
       
         <path d="M0,195 C83,188 467,108 486,165" stroke="#00C1C1"

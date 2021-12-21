@@ -12,20 +12,7 @@
 
   
 }
-.special_navbar
-{
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px 0 50px;
-  height: 100px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background: url('back.jpg');
-  background-size: cover;
 
-
-  
-}
 
 
 .logo {
@@ -56,3 +43,35 @@
   font-family: inherit;
   text-decoration: none;
 }
+@media screen and (max-width: 1214px) {
+  .links {
+    display: none;
+  }
+  
+  
+}
+@media screen and (max-width: 440px) {
+  .logo {
+    
+    width: 220px;
+    height: 58px;
+   
+  
+  }
+  .navbar {
+    padding: 0;
+  }
+  
+}
+@media screen and (max-width: 392px) {
+  .logo {
+    
+    width: 190px;
+    height: 40px;
+    
+   
+  
+  }
+  
+}
+
