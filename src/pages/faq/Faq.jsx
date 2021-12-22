@@ -5,6 +5,7 @@ import Landing from '../../components/landing/Landing';
 import SocialMedia from '../../components/socialmediaBox/SocialMedia';
 import Question from '../../components/question/Question';
 import Galerie from '../../components/galerie/Galerie';
+import Footer from '../../components/footer/Footer';
 export default function Faq() {
   return (
     <div className={classes.faq}>
@@ -22,7 +23,7 @@ export default function Faq() {
         
       </div>
       <Galerie />
-      
+      <Footer />
       
     </div>
   )

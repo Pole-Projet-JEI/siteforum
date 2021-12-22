@@ -19,7 +19,7 @@ export default function Hero() {
 
         <div className={classes.section}>
           <div className={classes.btn}>
-            <Button  content="OBTENEZ VOTRE TICKET" padding="150px" hover="#F9138F"/>
+            <Button  content="OBTENEZ VOTRE TICKET" padding="150px" hover="#F9138F" link="planning"/>
           </div>
           <div className={classes.img}>
             <img src={jeilogo} alt="p1" />
@@ -30,7 +30,7 @@ export default function Hero() {
         
         <div className={classes.section}>
           <div className={classes.btn}>
-            <Button content="OBTENEZ VOTRE STAND"  padding="150px" />
+            <Button content="OBTENEZ VOTRE STAND"  padding="150px" link="stand"/>
           </div>
           <div className={classes.img}>
             <img src={insatlogo} alt="p2" />

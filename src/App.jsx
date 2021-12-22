@@ -1,7 +1,6 @@
 import './app.css';
 import {Fragment} from 'react';
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
-import $ from 'jquery';
 import Home from './pages/home/Home';
 import Planning from './pages/planning/Planning';
 import Stand from './pages/stand/Stand';

@@ -6,7 +6,7 @@ export default function Galerie() {
     <div className={classes.galerie}>
       <div className={classes.slider}>
         <div className={classes.button}>
-          <Button content="OBTENEZ VOTRE TICKET"/>
+          <Button content="OBTENEZ VOTRE TICKET" link="planning"/>
         </div>
         
 
