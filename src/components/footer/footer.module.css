@@ -52,9 +52,18 @@
   color: #A39D9D;
   vertical-align: middle;
   margin-right: 0.6rem;
-  width: 1rem;
 }
 .link {
   color:#fff;
   text-decoration: none;
+}
+@media screen and (max-width:650px) {
+  .footer1{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer2 p {
+    font-size: 0.6rem;
+    margin-right: 0.2rem;
+  }
 }
