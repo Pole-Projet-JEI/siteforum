@@ -22,6 +22,50 @@
   font-size: 3rem;
   font-weight: 600;
 
+}
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width:820px) {
+  .count {
+
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  
+}
+@media screen and (max-width:720px) {
+  .count {
+
+    font-size: 2rem;
+    font-weight: 600;
+  
+  }
+  .title {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  
+}
+@media screen and (max-width:590px) {
+  .counter
+  {
+    padding:40px;
+  }
   
 
+  
+}
+@media screen and (max-width:502px) {
+  .counter
+  {
+    padding:20px;
+  }
+  
+
+  
 }

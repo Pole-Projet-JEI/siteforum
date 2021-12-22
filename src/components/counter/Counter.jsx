@@ -14,7 +14,7 @@ export default function Counter(props) {
                                 <Ticker className={classes.count} end={props.first.number} suffix="+" />
                                 
                             </h2>
-                            <h4>{props.first.title}</h4>
+                            <h4 className={classes.title}>{props.first.title}</h4>
                         </div>
                     
                         <div className={classes.box}>
@@ -23,7 +23,7 @@ export default function Counter(props) {
                               <Ticker className={classes.count} end={props.second.number} suffix="+"/>
                               
                             </h2>
-                            <h4>{props.second.title}</h4>
+                            <h4 className={classes.title}>{props.second.title}</h4>
                         </div>
                     
                         <div className={classes.box}>
@@ -31,7 +31,7 @@ export default function Counter(props) {
                             <h2>
                               <Ticker className={classes.count} end={props.third.number} suffix="+"/>
                             </h2> 
-                            <h4>
+                            <h4 className={classes.title}>
                             {props.third.title}
                             </h4> 
                         </div>
@@ -41,7 +41,7 @@ export default function Counter(props) {
                             <h2>
                               <Ticker className={classes.count} end={props.fourth.number} suffix="+" />
                             </h2> 
-                              <h4>{props.fourth.title}</h4>
+                              <h4 className={classes.title}>{props.fourth.title}</h4>
                         </div>
                     
                   </div>
