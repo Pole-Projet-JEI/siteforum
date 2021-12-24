@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './speakers.module.css';
 import Navbar from '../../components/navbar/Navbar';
+import Profil from '../../components/profil/Profil';
 export default function Speakers() {
   return (
     
@@ -9,6 +10,7 @@ export default function Speakers() {
        <Navbar/>
       </div>
       speakerss
+      <Profil />
       
       
     </div>
