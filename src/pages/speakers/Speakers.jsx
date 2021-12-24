@@ -10,7 +10,15 @@ export default function Speakers() {
        <Navbar/>
       </div>
       speakerss
-      <Profil />
+      <Profil name="Foulen Fouleni " description="Responsable Workshops
+Étudiante en troisième année en Génie Logiciel
+
+Membre Senior du pôle projet de la Junior Entreprise INSAT Responsable Workshops
+Étudiante en troisième année en Génie Logiciel
+
+
+
+"/>
       
       
     </div>

@@ -6,7 +6,7 @@ import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import classes from './profil.module.css';
 import speakerphoto from './speaker1.png';
 
-export default function Profil() {
+export default function Profil(props) {
   const [ descriptionIsOpen, setDescriptionIsOpen] = useState(false); // delete modal not open
 
   function clickHandler() {
@@ -20,11 +20,12 @@ export default function Profil() {
   }
   return (
     <div className={classes.profil}>
+      <img src={props.photo} alt="" className={classes.img} />
 
       <AddCircleOutlineIcon className={classes.icon} onClick = { clickHandler /* no ()*/ }  />
 
        
-      { descriptionIsOpen && <Description onCancel={closeDescriptionHandler} onConfirm={closeDescriptionHandler}/> }
+      { descriptionIsOpen && <Description name={props.name} description={props.description} onCancel={closeDescriptionHandler} onConfirm={closeDescriptionHandler}/> }
       { descriptionIsOpen && <Backdrop onClick={closeDescriptionHandler} /> }
 
 

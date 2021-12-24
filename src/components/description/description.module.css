@@ -2,16 +2,23 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   background-color: white;
-  
-  width: 50rem;
+
+  width: 60rem;
   z-index: 10;
   position: fixed;
-  top: 20vh;
-  left: calc(50% - 19rem);
- 
+  top: 5vh;
+  left: calc(50% - 30rem);
   display: flex;
-  justify-content: space-evenly;
+ 
+  max-width: 1140px;
 
+
+}
+.img {
+  width: 50%;
+}
+.content {
+  width: 50%;
 }
 .img img {
   height: 100%;
@@ -24,21 +31,26 @@
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  
+  overflow-y: hidden;
 }
 .socials {
   background-color: var(--primary-color);
+  overflow-y: hidden;
+  margin-top: 100px;
   
 }
 .intro {
   display: flex;
   justify-content: space-between;
+  overflow-y: hidden;
   
 }
 .text {
   padding: 20px;
   width: 100%;
   font-family: inherit;
+  overflow-y: hidden;
 }
 .icon {
   position: relative;
@@ -55,66 +67,47 @@
   font-size: 1rem;
 
 }
-
-@media screen and (max-width:1005px) {
+@media screen and (max-width: 992px){
   .description {
-    
-    
-    width: 45rem;
-    left: calc(50% - 21rem);
-
-  
+    max-width: 960px;
+    top:0vh;
   }
 }
-@media screen and (max-width:810px) {
+@media screen and (max-width: 1200px){
   .description {
-    
-    
-    width: 43rem;
-    left: calc(50% - 22rem);
-
-  
+    max-width: 1140px;
   }
 }
-@media screen and (max-width:700px) {
+/*
+@media screen and (max-width:1135px) {
   .description {
-    
-    
-    width: 40rem;
-    left: calc(50% - 20rem);
+    flex-direction: column;
+    width: 50rem;
+    align-self: center;
+   
+  }
+  .img {
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .img img {
+    width: 50%;
+    margin-left: 25%;
 
-  
   }
-}
-@media screen and (max-width:654px) {
-  .description {
-    
-    
-    width: 35rem;
-    left: calc(50% - 17rem);
+  
+  .content {
+    height: 50%;
+    width: 100%;
+   
 
-  
   }
-  .text h2 {
-    font-size: 1.8rem;
+  .socials {
+    overflow-y: hidden;
   }
-  .text p {
-    font-size: 0.8rem;
+  .text {
+    overflow-y: hidden;
   }
-}
-@media screen and (max-width:654px) {
-  .description {
-    
-    
-    width: 30rem;
-    left: calc(50% - 15rem);
-
-  
-  }
-  .text h2 {
-    font-size: 1.8rem;
-  }
-  .text p {
-    font-size: 0.8rem;
-  }
-}
+}*/
