@@ -1,0 +1,62 @@
+.workshop_item {
+  display: flex;
+  
+}
+.profil {
+  float: right;
+}
+.description {
+  width: 60%;
+  
+  padding-right: 50px;
+  margin-right: 50px;
+}
+.temp {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-bottom: 40px;
+}
+.temp h5 {
+  color:#A39D9D;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.title {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color:var(--primary-color);
+}
+.details p {
+  color:var(--parag-color-dark);
+ 
+}
+@media screen and (max-width:965px) {
+  .workshop_item {
+    flex-direction: column;
+  }
+  .profil {
+    align-self: center;
+  }
+  .description {
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width:650px) {
+  
+  .description {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .details p {
+    font-size: 0.85rem;
+    
+  }
+  .temp h5 {
+    font-size: 0.6rem;
+  }
+  
+}
