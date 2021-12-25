@@ -1,0 +1,11 @@
+.workshops {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  
+}
+hr{
+  border-color: #A39D9D;
+  width: 95%;
+  margin: 20px 0 20px 0;
+}
