@@ -6,8 +6,8 @@ import { Card } from "@mui/material";
 
 function FormulaireStand() {
   return (
-    <div>
-    <Card >
+    <div className={classes.card}>
+    
     <div className={classes.center}>
       <h1>s'inscrire maintenant</h1>
       <p>
@@ -45,7 +45,7 @@ function FormulaireStand() {
         
       </form>
     </div>
-    </Card>
+   
     </div>
   );
 }
