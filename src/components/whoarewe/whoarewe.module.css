@@ -1,0 +1,75 @@
+.whoarewe{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 3rem;
+    align-items: center;
+    
+}
+.imgJei{
+    width: 50%;
+}
+.imgJei img {
+    width: 90%;
+    border-radius: 8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.forumJei{
+  width: 50%;
+  padding-left:2rem;
+  vertical-align: middle;
+}
+.forumJei h1{
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    font-size: 1.6rem;
+    color: #004059;
+    font-weight: bolder;
+}
+.forumJei hr{
+    width: 15%;
+    border-color: #004059;
+    background-color: #004059;
+}
+.forumJei p{
+    width: 78%;
+    font-size: 1rem;
+    color: #01212E;
+    text-align: justify;
+   
+}
+@media screen and (max-width:1050px) {
+    .forumJei p{
+        width: 90%;
+    }
+}
+@media screen and (max-width:950px) {
+    .whoarewe{
+      flex-direction: column;
+      align-items: center;
+    }
+    .imgJei{
+        width: 90%;
+        margin-left: -2%;
+        margin-bottom: 2rem;
+    }
+    .forumJei{
+        text-align: center;
+        width: 100%;
+        padding-left: 0rem;
+    }
+    .forumJei h1{
+        letter-spacing: 3px;
+        word-spacing: 3px;
+    }
+    .forumJei hr{
+        margin: 1rem auto;
+    }
+    .forumJei p{
+        margin: auto;
+        width: 80%;
+    }
+   
+  }

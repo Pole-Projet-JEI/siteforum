@@ -1,7 +1,7 @@
-import React from 'react'
-import CountUp from "react-countup";
-import VisibilitySensor from "react-visibility-sensor";
-import { useState } from "react";
+import React from 'react';
+import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
+import { useState } from 'react';
 export default function Ticker({ className, ...rest }) {
  const [viewPortEntered, setViewPortEntered] = useState(false);
 
