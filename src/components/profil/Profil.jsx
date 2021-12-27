@@ -22,7 +22,7 @@ export default function Profil(props) {
     <div className={classes.profil}>
       <img src={props.photo} alt="" className={classes.img} />
 
-      <AddCircleOutlineIcon className={classes.icon} onClick = { clickHandler /* no ()*/ }  />
+      <AddCircleOutlineIcon style={{width:"30px",height:"30px",transition:"0.5s ease-in"}} className={classes.icon} onClick = { clickHandler /* no ()*/ }  />
 
        
       { descriptionIsOpen && <Description name={props.name} description={props.description} onCancel={closeDescriptionHandler} onConfirm={closeDescriptionHandler}/> }

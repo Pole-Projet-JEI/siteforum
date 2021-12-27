@@ -10,9 +10,9 @@ export default function SocialMedia(props) {
     <div className={classes.social_media}>
       <h3 className={classes.title}>{props.title}</h3>
       <div className={classes.social_media_box}>
-        <FacebookIcon className={classes.icon}/>
-        <InstagramIcon className={classes.icon}/>
-        <LinkedInIcon className={classes.icon}/>
+        <FacebookIcon style={{color:props.color,width:props.size,height:props.size}} className={classes.icon}/>
+        <InstagramIcon style={{color:props.color,width:props.size,height:props.size}} className={classes.icon}/>
+        <LinkedInIcon style={{color:props.color,width:props.size,height:props.size}} className={classes.icon}/>
       </div>
       
      

@@ -43,9 +43,37 @@
   font-family: inherit;
   text-decoration: none;
 }
-@media screen and (max-width: 1214px) {
+.menu {
+  margin: 15px;
+  color:#fff;
+  font-weight: 600;
+  display: none;
+  
+
+}
+@media screen and (max-width: 1234px) {
   .links {
     display: none;
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
+    
+  }
+  
+  
+}
+@media screen and (max-width: 600px) {
+
+  .logo {
+    
+    width: 220px;
+    height: 58px;
+   
+  
+  }
+  .navbar {
+    padding: 10px;
   }
   
   

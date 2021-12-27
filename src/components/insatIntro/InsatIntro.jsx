@@ -18,7 +18,7 @@ export default function InsatIntro() {
   
 
    <div  className={classes.btn}>
-    <Button color="#F9138F"  content="VISITER LA PAGE OFFICIELLE DE L'INSAT" hover="#F9138F" />
+    <Button color="#F9138F"  content="VISITER LA PAGE OFFICIELLE DE L'INSAT" link="https://www.facebook.com/insat.rnu.tn" hover="#F9138F" />
    </div>
   </div>
   )

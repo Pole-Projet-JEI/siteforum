@@ -2,6 +2,7 @@ import React from 'react'
 import logo from './logo.png';
 import classes from './navbar.module.css';
 import { Link } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 export default function Navbar() {
@@ -16,9 +17,15 @@ export default function Navbar() {
         <li><Link className={classes.link} to="/stand">Obtenez Votre Stand</Link></li>
         <li><Link className={classes.link} to="/speakers">Nos Speakers</Link></li>
         <li><Link className={classes.link} to="/faq">FAQ</Link></li>
-      
+        
+        
       </ul>
+      <div className={classes.menu}>
+        <MenuIcon  className={classes.menu} style={{width:"30px",height:"30px"}}/>
       
+
+      </div>
+     
     </div>
   )
 }

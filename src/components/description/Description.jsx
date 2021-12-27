@@ -22,7 +22,8 @@ export default function Description(props) {
         
 
         <div className={classes.socials}>
-          <SocialMedia />
+        
+          <SocialMedia color="#00C1C1" size="40px" />
           
 
         </div>
