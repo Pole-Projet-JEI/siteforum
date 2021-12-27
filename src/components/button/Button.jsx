@@ -5,7 +5,7 @@ export default function Button(props) {
   return (
     <div >
        <button type={props.type} className={classes.btn} style={{background:props.color,borderColor:props.color,paddingLeft:props.padding,paddingRight:props.padding}}>
-        <Link className={classes.content} to={"/"+props.link}>{props.content}</Link>
+        <a className={classes.content} href={props.link} >{props.content}</a>
       </button>
       
       

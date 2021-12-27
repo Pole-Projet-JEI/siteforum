@@ -5,6 +5,7 @@ import Timer from '../timer/Timer';
 import jeilogo from './jeilogo.png';
 import insatlogo from './insat.png';
 import hybride from './hybride.png';
+import { Link } from 'react-router-dom';
 export default function Hero() {
   return (
     <div className={classes.hero}>
@@ -19,6 +20,7 @@ export default function Hero() {
 
         <div className={classes.section}>
           <div className={classes.btn}>
+            
             <Button  content="OBTENEZ VOTRE TICKET" padding="150px" hover="#F9138F" link="planning"/>
           </div>
           <div className={classes.img}>

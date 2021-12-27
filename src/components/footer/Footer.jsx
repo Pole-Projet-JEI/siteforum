@@ -19,20 +19,20 @@ export default function Footer(){
                         INFORMATIONS
                     </h2>
                     <div>
-                        <p><EmailIcon className={classes.icon}/>Contact</p>
+                        <p><EmailIcon className={classes.icon}/><a className={classes.link} href="/home">Contact</a></p>
                     </div>
                     <div>
-                        <p><ConfirmationNumberIcon className={classes.icon}/>Ticket</p>
+                        <p><ConfirmationNumberIcon className={classes.icon}/><a className={classes.link} href="/planning">Ticket</a></p>
                     </div>  
                     <div>
-                    <p> <QuestionAnswerIcon className={classes.icon}/><Link className={classes.link} to="/faq">FAQ</Link></p>
+                    <p> <QuestionAnswerIcon className={classes.icon}/><a className={classes.link} href="/faq">FAQ</a></p>
                     </div>                
                 </div>
                 <div className={classes.footerelement}>
                     <h2 className={classes.titre}>
                         SUIVEZ-NOUS
                     </h2>
-                    <SocialMedia />              
+                    <SocialMedia size="28px" />              
                 </div>
             </div>
             <div className={classes.footer2}>
