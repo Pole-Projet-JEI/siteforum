@@ -22,7 +22,7 @@ function FormulaireStand() {
         bénéficiera d'une visibilité non seulement lors de la médiatisation de
         l'évenement mais aussi le jour meme de l'évènement.
       </p>
-      <form className={classes.form}>
+      <form className={classes.form} method="post" action="">
         <div className={classes.control}>
           <input type="text" placeholder="Votre Nom " required id="non" />
           </div>
@@ -46,7 +46,7 @@ function FormulaireStand() {
             />
           </div>
           <div className={classes.button}>
-          <Button content="S'inscrire" />
+          <Button content="S'inscrire" type="submit"/>
         </div>
         
       </form>

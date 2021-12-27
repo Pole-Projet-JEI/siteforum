@@ -11,9 +11,11 @@
 	top: 0;
 	padding-top: calc(var(--index) * var(--card-top-offset));
   
-    margin: 50px;
-    width: 90%;
-    max-width: 36.6rem;
+  margin: 50px;
+  margin-top: 30px;
+  width: 90%;
+  left: 100%;
+  max-width: 36.6rem;
 
 }
 .control {
