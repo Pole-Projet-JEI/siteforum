@@ -7,6 +7,7 @@ import Counter from '../../components/counter/Counter';
 import Galerie from '../../components/galerie/Galerie';
 import Profil from '../../components/profil/Profil';
 import speakerphoto from './speaker1.png';
+import WhoAreWe from '../../components/whoarewe/whoarewe';
 function Home() {
   return (
     <div className={classes.home}>
@@ -15,6 +16,7 @@ function Home() {
         <Hero />
       </div>
       <Landing subtitle="Qui Sommes-Nous ?" title="JUNIOR ENTREPRISE INSAT" color="#004059"/>
+      <WhoAreWe />
       <Counter first={{number:30,title:"Entreprises"}} second={{number:10,title:"Speakers"}} third={{number:2000,title:"Présents au Forum"}} fourth={{number:8,title:"Workshop Offerts"}} />
       <Landing subtitle="NOTRE ÉQUIPE" title="NOTRE COMITÉ D'ORGANISATION" color="#004059"/>
         <div className={classes.cards}>

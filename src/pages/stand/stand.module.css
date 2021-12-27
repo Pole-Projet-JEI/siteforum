@@ -5,8 +5,18 @@
   background-repeat: no-repeat;
   width: 100%;
   padding: 10px 30px 0px 30px;
-  height: 100vh;
   overflow-y: hidden;
  
 
+}
+.landing {
+  margin-bottom: -70px;
+}
+.filiere {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
 }

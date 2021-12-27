@@ -17,6 +17,7 @@
 .btn:hover {
   background:var(--optional-color);
   border-color: var(--optional-color);
+  opacity: 0.9;
 }
 .content {
   text-decoration: none;
