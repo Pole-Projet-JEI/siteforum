@@ -8,7 +8,7 @@
 .card {
 	position: sticky;
 	top: 0;
-	padding-top: calc(var(--index) * var(--card-top-offset));
+	
   
     margin: 3rem auto;
     width: 90%;
@@ -19,17 +19,16 @@
   margin-bottom: 0.5rem;
 }
 
-.control input,
-.control textarea {
+.control input {
   display: block;
   font: inherit;
   border-radius: 4px;
   border: 1px solid #004059;
   padding: 0.25rem;
-  width: 100%;
+  width: 90%;
 }
 .form {
-  padding: 1rem;
+  padding:0.5rem;
 }
 
 .center {
