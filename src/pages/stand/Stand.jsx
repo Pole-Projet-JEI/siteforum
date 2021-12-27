@@ -12,6 +12,7 @@ export default function Stand() {
         <Navbar/>
         <FormulaireStand/>
         </div>
+        
       
        
     </div>
