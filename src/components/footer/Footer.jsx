@@ -19,10 +19,10 @@ export default function Footer(){
                         INFORMATIONS
                     </h2>
                     <div>
-                        <p><EmailIcon className={classes.icon}/>Contact</p>
+                        <p><EmailIcon className={classes.icon}/><Link className={classes.link} to="/home">Contact</Link></p>
                     </div>
                     <div>
-                        <p><ConfirmationNumberIcon className={classes.icon}/>Ticket</p>
+                        <p><ConfirmationNumberIcon className={classes.icon}/><Link className={classes.link} to="/planing">Ticket</Link></p>
                     </div>  
                     <div>
                     <p> <QuestionAnswerIcon className={classes.icon}/><Link className={classes.link} to="/faq">FAQ</Link></p>
