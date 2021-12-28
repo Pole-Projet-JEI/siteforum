@@ -13,7 +13,7 @@ export default function ObtenirTicket(props) {
           une conférence des plus intéressante. Inscrivez-vous maintenant et
           faites décoller votre carrière professionnelle.
         </p>
-        <button> Obtenez Votre Ticket</button>
+        <button> bla bla bla</button>
       </div>
       <div className={classes.body}>
         <Carreau
