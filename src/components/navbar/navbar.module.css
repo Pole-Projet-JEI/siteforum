@@ -51,6 +51,9 @@
   
 
 }
+.responsive_menu {
+  transition: 3s ease-in;
+}
 @media screen and (max-width: 1234px) {
   .links {
     display: none;
