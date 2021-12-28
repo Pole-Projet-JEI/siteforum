@@ -6,6 +6,8 @@
   position: absolute;
   z-index: 2;
   transition: all 1s ease;
+  transform-origin: left;
+  transition: all 2s ease;
 }
 .links {
   list-style: none;

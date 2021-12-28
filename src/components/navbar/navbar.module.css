@@ -1,17 +1,33 @@
 .navbar
 {
   display: flex;
+  background: transparent;
   justify-content: space-between;
-  padding: 20px 50px 0 50px;
-
+  padding: 0 50px 0 50px;
   width: 100%;
-  background-repeat: no-repeat;
- 
-  background-size: cover;
- 
+  top: 0;
+  align-items: center;
+  height: 130px;
+  z-index: 999;
 
-  
 }
+.navbar_active
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+  background-color: var(--primary-color);
+  width: 100%;
+  align-items: center;
+  height: 130px;
+  position: fixed;
+  top:0;
+  z-index: 999;
+  transition: all 0.2s ease-in;
+
+
+}
+
 
 
 
@@ -52,7 +68,8 @@
 
 }
 .responsive_menu {
-  transition: 3s ease-in;
+  transform-origin: left;
+  transition: all 2s ease;
 }
 @media screen and (max-width: 1234px) {
   .links {

@@ -11,6 +11,7 @@ import Close from '@mui/icons-material/Close';
 export default function Navbar() {
 
   const [menuIsOpen,setMenuIsOpen] = useState(false);
+  const [navbar,setNavbar] = useState(false);
 
   const handleClick = () => {
     setMenuIsOpen(true);
@@ -21,8 +22,17 @@ export default function Navbar() {
     setMenuIsOpen(false);
     
   }
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  }
+
+  window.addEventListener('scroll',changeBackground);
   return (
-    <div className={classes.navbar}>
+    <div className={navbar ? classes.navbar_active : classes.navbar}>
       <Link to="/" >
         <img className={classes.logo} src={logo} alt="" />
       </Link>
