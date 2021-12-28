@@ -1,0 +1,35 @@
+.menu {
+  background-color: var(--primary-color);
+  width: 80%;
+  padding: 10px;
+  margin-top: 100px;
+  position: absolute;
+  z-index: 2;
+  transition: all 1s ease;
+  transform-origin: left;
+  transition: all 2s ease;
+}
+.links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.links li {
+  margin: 18px;
+  font-size: 1rem;
+  color:#fff;
+  font-weight: 600;
+  font-family: inherit;
+ 
+}
+.link {
+  margin: 15px;
+  font-size: 1rem;
+  color:#fff;
+  font-weight: 600;
+  font-family: inherit;
+  text-decoration: none;
+  
+}
