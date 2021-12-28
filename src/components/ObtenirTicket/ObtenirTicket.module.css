@@ -1,0 +1,31 @@
+.card {
+  background: whitesmoke;
+  display: inline-block;
+}
+
+.side {
+  height: 100%;
+  width: 40%;
+  display: inline-block;
+  float: left;
+}
+.side h1 {
+  padding-left: 120px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  font-size: 2rem;
+  color: rgb(24, 24, 104);
+}
+.side p {
+  padding-left: 120px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+}
+.side button {
+  margin-left: 120px;
+  margin-bottom: 60px;
+}
+.body {
+  margin: 10px;
+}
