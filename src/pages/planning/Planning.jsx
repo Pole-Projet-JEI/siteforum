@@ -22,7 +22,6 @@ export default function Planning() {
     setBtnContent("EN LIGNE");
 
   }
- 
 
   return (
     <div className="planning">
