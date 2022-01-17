@@ -6,10 +6,12 @@ import Planning from './pages/planning/Planning';
 import Stand from './pages/stand/Stand';
 import Speakers from './pages/speakers/Speakers';
 import Faq from './pages/faq/Faq';
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <div className="App">
-       <Router>
+      <Router>
+        <ScrollToTop />
       <Fragment>
    
         <Routes>

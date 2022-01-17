@@ -5,6 +5,7 @@ export default function Button(props) {
   return (
     <div>
       <button
+        onClick={props.onClick}
         type={props.type}
         className={classes.btn}
         style={{
