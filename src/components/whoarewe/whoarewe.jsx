@@ -1,9 +1,42 @@
 import React from 'react';
 import classes from './whoarewe.module.css';
 import Team from './TEAM.jpg';
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
+import { useAnimation } from 'framer-motion';
+
 export default function WhoAreWe(){
+    const {ref, inView} = useInView({
+        threshold: 0.2 //20% should be visible
+      });
+    
+      //ref : element that we want to monitor : when ref in view => inView =true , else false
+      const animation = useAnimation();
+     
+      useEffect(() =>{
+         
+        // 3 hooks
+        if(inView) {
+          animation.start({
+            x: 0,
+            transition: {
+              type: 'spring' , duration: 1.2,bounce: 0
+            }
+          });
+        }
+        if(!inView) {
+          animation.start({x: '200vw',
+          transition: {
+            type: 'spring' , duration: 1,bounce: 0
+          }
+        })
+        }
+          
+      },[inView]);
     return(
-    <div className={classes.whoarewe}>
+    <div ref={ref}>
+        <motion.div animate={animation} className={classes.whoarewe}>
         <div className={classes.imgJei}>
         <img src={Team} alt=''></img>
         </div>
@@ -18,5 +51,8 @@ export default function WhoAreWe(){
             Soyez au rendez-vous le 24 Novembre à l’INSAT ou à travers Fab’Event.
             </p>
         </div>
+    </motion.div>
+
     </div>
+    
     )}

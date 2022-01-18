@@ -18,6 +18,7 @@ export default function Button(props) {
         <a className={classes.content} href={props.link}>
           {props.content}
         </a>
+        
       </button>
     </div>
   );
