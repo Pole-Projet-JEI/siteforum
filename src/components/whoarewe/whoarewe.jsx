@@ -26,7 +26,7 @@ export default function WhoAreWe(){
           });
         }
         if(!inView) {
-          animation.start({x: '200vw',
+          animation.start({x: '100vw',
           transition: {
             type: 'spring' , duration: 1,bounce: 0
           }
