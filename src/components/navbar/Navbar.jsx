@@ -8,6 +8,7 @@ import { useState } from 'react';
 import Close from '@mui/icons-material/Close';
 
 
+
 export default function Navbar() {
 
   const [menuIsOpen,setMenuIsOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function Navbar() {
     
   }
   const changeBackground = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 450) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -46,6 +47,7 @@ export default function Navbar() {
         
       </ul>
       <div className={classes.menu}>
+        
         { !menuIsOpen &&  <MenuIcon onClick={handleClick} className={classes.menu} style={{width:"30px",height:"30px",transition: "all 2s ease"}}/> }
         { menuIsOpen &&  <Close onClick={closeMenuHandler} className={classes.menu} style={{width:"30px",height:"30px",transition: "all 2s ease"}}/>}
        

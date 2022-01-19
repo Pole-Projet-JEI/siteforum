@@ -1,11 +1,36 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 150px 0 0 0;
+  padding: 50px 0 50px 50px;
+  background-color: transparent;
+
+}
 .card {
-  background: whitesmoke;
+  overflow-y: hidden;
+  width: 65%;
+  height: 100%;
+ background-color: transparent;
   align-items: center;
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(16rem,21rem)) ;
+  grid-gap: 1rem;
+  justify-content: center;
+  margin-top: 50px;
+
+
+ /* align-items: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
+  grid-gap: 1rem ;*/
 }
-
+.side {
+  width: 35%;
+  
+  
+}
+/*
 .side {
   grid-column: span 2;
   grid-row: span 2;
@@ -19,7 +44,17 @@
   padding-top: 30px;
   font-size: 1.8rem;
   color: rgb(24, 24, 104);
+}*/
+.side h1 {
+  color: #004059;
+  margin-bottom: 20px;
+  
 }
+.side p {
+  color: var(--parag-color-dark);
+  margin-bottom: 20px;
+}
+/*
 .side p {
   padding-left: 120px;
   padding-right: 60px;
@@ -28,23 +63,70 @@
 .side button {
   margin-left: 120px;
   margin-bottom: 60px;
+}*/
+.carreau {
+ 
+  background:  #fff;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow-y: hidden;
+  width: 320px;
+  height: 230px;
+  padding: 20px;
+  padding-bottom: 0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 20px #e0dede;
+  cursor: pointer;
+  transition: 0.2s;
+  
+
+
 }
+.carreau:hover
+{
+  transform: scale(1.02);
+
+
+}
+.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  overflow-y: hidden;
+  letter-spacing: 2px;
+
+  
+  
+
+}
+.content p {
+  font-size: 0.9rem;
+  overflow-y: hidden;
+  color: #004059;
+
+  
+  
+}
+/*
 .carreau h2 {
   color: rgb(27, 26, 26);
   font-size: 1.2rem;
   padding: 0;
   padding-top: 10px;
   padding-left: 20px;
-}
+}*/
 
 .icon {
   float: right;
   margin-left: 260px;
-  margin-bottom: -50px;
-  margin-top: 10px;
+  
+  bottom: 0;
 }
+/*
 .carreau p {
-  width: 90%;
+  
   color: rgb(54, 32, 116);
   padding-left: 20px;
   padding-bottom: 30px;
@@ -52,9 +134,9 @@
   padding-top: 0;
   justify-content: space-between;
 }
+
 .carreau {
   position: relative;
-  background-color: white;
   margin: 14px;
   float: left;
   display: flex;
@@ -62,4 +144,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}*/
+@media screen and (max-width:950px) {
+
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .side {
+    width: 100%;
+    margin-bottom: 120px;
+    
+  }
+  .card {
+    width: 100%;
+  }
+  
 }

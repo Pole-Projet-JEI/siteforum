@@ -5,6 +5,7 @@ export default function Button(props) {
   return (
     <div>
       <button
+        onClick={props.onClick}
         type={props.type}
         className={classes.btn}
         style={{
@@ -17,6 +18,7 @@ export default function Button(props) {
         <a className={classes.content} href={props.link}>
           {props.content}
         </a>
+        
       </button>
     </div>
   );

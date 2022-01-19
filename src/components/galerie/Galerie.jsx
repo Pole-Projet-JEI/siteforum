@@ -1,16 +1,14 @@
 import React from 'react'
 import classes from './galerie.module.css';
 import Button from '../button/Button';
+import Slider from '../slider/Slider';
 export default function Galerie() {
   return (
     <div className={classes.galerie}>
-      <div className={classes.slider}>
-        <div className={classes.button}>
-          <Button content="OBTENEZ VOTRE TICKET" link="planning"/>
-        </div>
+     
+        <Slider />
         
-
-      </div>
+     
 
       
     </div>

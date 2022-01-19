@@ -6,9 +6,18 @@ import SocialMedia from '../../components/socialmediaBox/SocialMedia';
 import Question from '../../components/question/Question';
 import Galerie from '../../components/galerie/Galerie';
 import Footer from '../../components/footer/Footer';
-export default function Faq() {
+import { motion } from 'framer-motion';
+export default function Faq(props) {
   return (
-    <div className={classes.faq}>
+    <motion.div 
+      
+    initial="initial"
+    animate="in"
+    exit="out"
+    variants={props.pageVariants}
+    transition={props.pageTransition}
+      
+      className={classes.faq}>
       <div className={classes.first_part}>
         <Navbar />
         <Landing subtitle="FAQ" title="Les Questions Les Plus Fréquentes"/>
@@ -25,6 +34,6 @@ export default function Faq() {
       <Galerie />
       <Footer />
       
-    </div>
+    </motion.div>
   )
 }

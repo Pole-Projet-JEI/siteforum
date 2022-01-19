@@ -6,10 +6,18 @@ import Counter from '../../components/counter/Counter';
 import Footer from '../../components/footer/Footer';
 import InsatIntro from '../../components/insatIntro/InsatIntro';
 import Landing from '../../components/landing/Landing';
-export default function Stand() {
+import { motion } from 'framer-motion';
+export default function Stand(props) {
   return (
     
-      <div className="stand">
+      <motion.div 
+          
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={props.pageVariants}
+      transition={props.pageTransition}
+        className="stand">
         <div className={classes.first_part}>
         <Navbar/>
         <div className={classes.landing}>
@@ -32,7 +40,7 @@ export default function Stand() {
         
       
        
-    </div>
+    </motion.div>
       
     
   )

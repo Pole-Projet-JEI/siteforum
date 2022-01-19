@@ -6,47 +6,36 @@ import Button from '../../components/button/Button';
 import Workshops from '../../components/workshops/Workshops';
 import Footer from '../../components/footer/Footer';
 import { useState } from 'react';
-import { useEffect } from 'react';
-export default function Planning() {
-  const [ enLigneIsOpen, setEnLigneIsOpen] = useState(false);
-  const [ btnContent, setBtnContent] = useState("EN LIGNE");
-  
-  function clickHandler() {
-    setEnLigneIsOpen(true);
-    setBtnContent("PRESENTIEL");
-    console.log('en ligne displayed');
+import { motion } from 'framer-motion';
 
-  }
-  function clickHandler1() {
-    setEnLigneIsOpen(false);
-    setBtnContent("EN LIGNE");
+export default function Planning(props) {
 
-  }
+  const [isToggled, setIsToggled] = useState(false);
  
-
   return (
-    <div className="planning">
+    <motion.div 
+    initial="initial"
+    animate="in"
+    exit="out"
+    variants={props.pageVariants}
+    transition={props.pageTransition}
+      className="planning"
+      >
       <div className={classes.first_part}>
        <Navbar/>
       </div>
       <Header subtitle="JOUR J" title="NOTRE PLANNING DU JOUR" color="#fff"/>
       <div className={classes.workshops_container}>
-        <div className={classes.intro}>
+        <div  className={classes.intro}>
             <h2 className={classes.date}>Le 24 Novembre 2021</h2>
            
-
-            { enLigneIsOpen && <Button content={btnContent} color="#00C1C1" onClick={clickHandler1}/> }
-            
-            { !enLigneIsOpen && <Button content={btnContent} color="#00C1C1" onClick={ clickHandler }/> }
+            {isToggled ? <Button content="Présentiel" onClick={ () => setIsToggled(!isToggled) } /> : <Button content="En Ligne" onClick={ () => setIsToggled(!isToggled) } />  }
+           
         </div>
-        { enLigneIsOpen && <Workshops type="en ligne" /> }
-        { !enLigneIsOpen &&  <Workshops type="présentiel" /> } 
+        { isToggled ? <Workshops type="en ligne" /> : <Workshops type="présentiel" /> }
       </div>
       <Footer />
       
-      
-      
-      
-    </div>
+    </motion.div>
   )
 }
