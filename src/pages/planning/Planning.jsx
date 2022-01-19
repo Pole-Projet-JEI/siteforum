@@ -7,6 +7,7 @@ import Workshops from '../../components/workshops/Workshops';
 import Footer from '../../components/footer/Footer';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+
 export default function Planning(props) {
 
   const [isToggled, setIsToggled] = useState(false);
@@ -25,7 +26,7 @@ export default function Planning(props) {
       </div>
       <Header subtitle="JOUR J" title="NOTRE PLANNING DU JOUR" color="#fff"/>
       <div className={classes.workshops_container}>
-        <div className={classes.intro}>
+        <div  className={classes.intro}>
             <h2 className={classes.date}>Le 24 Novembre 2021</h2>
            
             {isToggled ? <Button content="Présentiel" onClick={ () => setIsToggled(!isToggled) } /> : <Button content="En Ligne" onClick={ () => setIsToggled(!isToggled) } />  }
