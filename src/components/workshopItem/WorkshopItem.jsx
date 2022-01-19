@@ -1,11 +1,11 @@
 import React from 'react'
 import classes from './workshopItem.module.css';
 import Profil from './../profil/Profil';
-
+import { motion } from 'framer-motion';
 export default function WorkshopItem(props) {
   return (
     <div className={classes.workshop_item}>
-      <div className={classes.description}>
+      <motion.div animate={props.animate} className={classes.description}>
         <div className={classes.details}>
 
           <div className={classes.temp}>
@@ -23,11 +23,11 @@ export default function WorkshopItem(props) {
           <p>{props.description}</p>
 
         </div>
-      </div>
-      <div className={classes.profil}>
+      </motion.div>
+      <motion.div animate={props.animate}  className={classes.profil}>
         <Profil photo={props.photo} name={props.formateurN} description={props.formateurD} />
 
-      </div>
+      </motion.div>
 
       
     </div>

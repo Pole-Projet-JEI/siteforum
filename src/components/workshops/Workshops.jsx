@@ -36,30 +36,21 @@ export default function Workshops(props) {
       
   },[inView]);
   return (
-    <div>
+    
       <div ref={ref} className={classes.workshops} >
-        <motion.h1 animate={animation} >{props.type}</motion.h1>
-        <motion.div animate={animation}>
-          <WorkshopItem title="WORKSHOP DESIGN THINKING" place="Orange Center INSAT" time="2:30 pm" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" formateurN="FOULEN FOULENI" formateurD="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" photo={speaker} />
-        </motion.div>
-        
+        <motion.h1 animate={animation}>{props.type}</motion.h1>
+        <WorkshopItem animate={animation} title="WORKSHOP DESIGN THINKING" place="Orange Center INSAT" time="2:30 pm" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" formateurN="FOULEN FOULENI" formateurD="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" photo={speaker} />
         <hr />
-        <motion.div animate={animation}>
-          <WorkshopItem title="WORKSHOP DESIGN THINKING" place="Orange Center INSAT" time="2:30 pm" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" formateurN="FOULEN FOULENI" formateurD="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" photo={speaker} />
-        </motion.div>
+        <WorkshopItem animate={animation} title="WORKSHOP DESIGN THINKING" place="Orange Center INSAT" time="2:30 pm" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" formateurN="FOULEN FOULENI" formateurD="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" photo={speaker}  />
         <hr />
-        <motion.div animate={animation}>
-          <WorkshopItem title="WORKSHOP DESIGN THINKING" place="Orange Center INSAT" time="2:30 pm" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" formateurN="FOULEN FOULENI" formateurD="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" photo={speaker} />
-        </motion.div>
+        <WorkshopItem animate={animation} title="WORKSHOP DESIGN THINKING" place="Orange Center INSAT" time="2:30 pm" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" formateurN="FOULEN FOULENI" formateurD="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" photo={speaker}  />
         <hr />
-        <motion.div animate={animation}>
-          <WorkshopItem title="WORKSHOP DESIGN THINKING" place="Orange Center INSAT" time="2:30 pm" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" formateurN="FOULEN FOULENI" formateurD="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" photo={speaker} />
-        </motion.div>
+        <WorkshopItem animate={animation} title="WORKSHOP DESIGN THINKING" place="Orange Center INSAT" time="2:30 pm" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" formateurN="FOULEN FOULENI" formateurD="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" photo={speaker}  />
         
 
       </div>
 
-    </div>
+    
     
   )
 }
