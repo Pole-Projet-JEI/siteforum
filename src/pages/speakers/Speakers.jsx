@@ -4,7 +4,8 @@ import Navbar from '../../components/navbar/Navbar';
 import Modal from '../../components/modal/Modal';
 import { useState } from 'react';
 import Profil from '../../components/profil/Profil';
-export default function Speakers() {
+import { motion } from 'framer-motion';
+export default function Speakers(props) {
   const [modalState, setModalState] = useState(false)
 
   const toggleModalState = () => {
@@ -12,7 +13,14 @@ export default function Speakers() {
   }
   return (
     
-     <div className="speaker">
+     <motion.div 
+        
+     initial="initial"
+    animate="in"
+    exit="out"
+    variants={props.pageVariants}
+    transition={props.pageTransition}
+        className="speaker">
       <div className={"first_part"}>
        <Navbar/>
       </div>
@@ -21,7 +29,7 @@ export default function Speakers() {
       
       {modalState && <Modal />}
 
-    </div>
+    </motion.div>
       
     
   )

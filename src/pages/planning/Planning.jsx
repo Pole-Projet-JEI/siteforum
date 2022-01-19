@@ -6,13 +6,20 @@ import Button from '../../components/button/Button';
 import Workshops from '../../components/workshops/Workshops';
 import Footer from '../../components/footer/Footer';
 import { useState } from 'react';
-
-export default function Planning() {
+import { motion } from 'framer-motion';
+export default function Planning(props) {
 
   const [isToggled, setIsToggled] = useState(false);
  
   return (
-    <div className="planning">
+    <motion.div 
+    initial="initial"
+    animate="in"
+    exit="out"
+    variants={props.pageVariants}
+    transition={props.pageTransition}
+      className="planning"
+      >
       <div className={classes.first_part}>
        <Navbar/>
       </div>
@@ -28,6 +35,6 @@ export default function Planning() {
       </div>
       <Footer />
       
-    </div>
+    </motion.div>
   )
 }

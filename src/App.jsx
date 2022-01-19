@@ -1,32 +1,58 @@
 import './app.css';
 import {Fragment} from 'react';
-import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Routes, useLocation} from 'react-router-dom';
 import Home from './pages/home/Home';
 import Planning from './pages/planning/Planning';
 import Stand from './pages/stand/Stand';
 import Speakers from './pages/speakers/Speakers';
 import Faq from './pages/faq/Faq';
 import ScrollToTop from './components/ScrollToTop';
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        <ScrollToTop />
-      <Fragment>
-   
-        <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/planning' element={<Planning />} />
-          <Route exact path='/speakers' element={<Speakers />} />
-          <Route exact path='/stand' element={<Stand />} />
-          
-          <Route exact path='/faq' element={<Faq />} />
-        </Routes>
+import { AnimatePresence } from 'framer-motion';
 
-      </Fragment>
-    </Router>
+function App() {
+  const pageVariants = {
+    initial: {
+      opacity: 0,
       
-    </div>
+      scale: 0.8
+    },
+    in: {
+      opacity: 1,
+    
+      scale: 1
+    },
+    out: {
+      opacity: 0,
+     
+      scale: 1.2
+    }
+  };
+  
+  const pageTransition = {
+    
+  };
+  return (
+       <div >
+          <Router  >
+            <ScrollToTop />
+            <Fragment>
+            <AnimatePresence exitBeforeEnter>
+              <Routes>
+                <Route exact path='/' element={<Home pageVariants={pageVariants} pageTransition={pageTransition} />} />
+                <Route exact path='/planning' element={<Planning pageVariants={pageVariants} pageTransition={pageTransition}/>} />
+                <Route exact path='/speakers' element={<Speakers pageVariants={pageVariants} pageTransition={pageTransition}/>} />
+                <Route exact path='/stand' element={<Stand pageVariants={pageVariants} pageTransition={pageTransition}/>} />
+                
+                <Route exact path='/faq' element={<Faq />} />
+              </Routes>
+            </AnimatePresence>
+            </Fragment>
+        </Router>
+      
+        </div>
+
+    
+   
   );
 }
 
