@@ -9,7 +9,7 @@ import { useAnimation } from 'framer-motion';
 export default function Workshops(props) {
   
   const {ref, inView} = useInView({
-    threshold: 0.2 //20% should be visible
+    threshold: 0.1 //20% should be visible
   });
   
   //ref : element that we want to monitor : when ref in view => inView =true , else false
