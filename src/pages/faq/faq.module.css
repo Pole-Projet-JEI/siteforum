@@ -3,18 +3,17 @@
   background: url('back.jpg')  ;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
-
-  
   
 }
 .box
 {
   display: flex;
-  justify-content: space-between;
-  padding-left: 50px;
+  justify-content: space-around;
 }
-.qts {
-  display: flex;
-  flex-direction: column;
+@media screen and (max-width:900px) {
+  .box{
+    flex-direction: column;
+  }
 }
