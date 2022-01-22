@@ -12,11 +12,13 @@ import ObtenirTicket from '../../components/ObtenirTicket/ObtenirTicket';
 import { motion } from 'framer-motion';
 import Axios from 'axios';
 import { useState , useEffect} from 'react';
-
+import Popup from '../../components/popup/Popup';
 
 function Home(props) {
 
 
+  
+   
   const [organisateur,setOrganisateur] = useState([]);
   useEffect(() => {
         
@@ -66,6 +68,9 @@ function Home(props) {
             
             
           </div>
+          <Profil  photo={speakerphoto}/>
+        
+       
         <Galerie />
         <Footer />
         

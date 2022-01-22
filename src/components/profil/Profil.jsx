@@ -1,51 +1,37 @@
 import React from 'react';
 import {useState} from 'react';
-import Description from '../description/Description';
-import Backdrop from '../backdrop/Backdrop';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import classes from './profil.module.css';
-import speakerphoto from './speaker1.png';
-import Modal from '../../components/modal/Modal';
+import Popup from '../popup/Popup';
 
 
 export default function Profil(props) {
-  const [modalState, setModalState] = useState(false);
+  const [modalState, setModalState] = useState(false)
 
   const toggleModalState = () => {
     setModalState(true);
-    
-    
-    document.body.style="overflow-y:hidden;";
-  
-  
    
-  }
-  
+    const offset = window.scrollY ;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${offset}px`;
+   }
+   const closeModal = () => {
+     setModalState(false);
+     const scrollY = document.body.style.top;
+     document.body.style.position = '';
+     document.body.style.top = '';
+     window.scrollTo(0, parseInt(scrollY || '0') * -1);
+   }
   
  
-  /*const [ descriptionIsOpen, setDescriptionIsOpen] = useState(false); // delete modal not open
-
-  function clickHandler() {
-    setDescriptionIsOpen(true);
-  }
-
-  function closeDescriptionHandler() {
-
-    setDescriptionIsOpen(false);
-    
-  }*/
+  
   return (
     <div className={classes.profil}>
       <img src={props.photo} alt="" className={classes.img} />
 
       <AddCircleOutlineIcon style={{width:"30px",height:"30px",transition:"0.5s ease-in"}} className={classes.icon} onClick = { toggleModalState  }  />
       
-      {modalState && <Modal description={props.description} name={props.name}/>  }
-       
-      {/* descriptionIsOpen && <Description name={props.name} description={props.description} onCancel={closeDescriptionHandler} onConfirm={closeDescriptionHandler}/> */ }
-      {/* descriptionIsOpen && <Backdrop onClick={closeDescriptionHandler} /> */}
-
-
+      {modalState && <Popup img={props.photo} closePopup = {closeModal} showPopup={modalState} />}
   </div>
   )
 }

@@ -36,7 +36,7 @@ function Modal(props) {
          
                 <div className="title_close">
                   <h2>{props.name}</h2>
-                  <Close onClick={ toggleModalState } style={{color:"black",marginTop:"-45px",cursor:"pointer"}}/>
+                  <Close onClick={ toggleModalState } style={{color:"black",cursor:"pointer"}}/>
                 </div>
                 
                 <p>{props.description}</p>
