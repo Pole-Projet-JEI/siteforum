@@ -57,7 +57,7 @@ function Home(props) {
           {organisateur.map((val,key) => {
             return(
               <div className={classes.card}>
-                <Profil name={val.firstname+""+val.lastname} photo={speakerphoto} description={val.description}/>
+                <Profil name={val.firstname+" "+val.lastname} title={val.title} photo={speakerphoto} description={val.description}/>
                 <h2>{val.firstname+""+val.lastname}</h2>
                 <h4>{val.title}</h4>
 
@@ -68,7 +68,7 @@ function Home(props) {
             
             
           </div>
-          <Profil  photo={speakerphoto}/>
+        
         
        
         <Galerie />

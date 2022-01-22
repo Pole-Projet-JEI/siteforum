@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './popup.module.css';
 import {motion,  AnimatePresence} from 'framer-motion';
 import Close from "@mui/icons-material/Close";
+import SocialMedia from '../socialmediaBox/SocialMedia';
 
 const backdropVariants = {
     visible: {
@@ -47,13 +48,14 @@ export default function Popup(props) {
         
                     <img className={classes.img} src={props.img} alt="" />
                     <div className={classes.content}>
-                           <Close onClick={props.closePopup} style={{color:"black",marginLeft:"350px",marginBottom:"-120px",marginTop:"-40px",cursor:"pointer"}}/>
+                         
                    
-                            <h2 className={classes.title}>Foulen Fouleni</h2>
+                            <h2 className={classes.title}>{props.name}</h2>
+                            <h4>{props.title}</h4>
                        
-                        <p className={classes.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum veritatis hic dolor, voluptatibus tempore. Eos omnis quam totam facilis.</p>
+                        <p className={classes.description}>{props.description}</p>
                         <div>
-                            Social media
+                           <SocialMedia color="#00C1C1" size="40px"/>
                         </div>
                     </div>
                 </motion.div>

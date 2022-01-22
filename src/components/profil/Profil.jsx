@@ -31,7 +31,7 @@ export default function Profil(props) {
 
       <AddCircleOutlineIcon style={{width:"30px",height:"30px",transition:"0.5s ease-in"}} className={classes.icon} onClick = { toggleModalState  }  />
       
-      {modalState && <Popup img={props.photo} closePopup = {closeModal} showPopup={modalState} />}
+      {modalState && <Popup name={props.name} description={props.description} title={props.title} img={props.photo} closePopup = {closeModal} showPopup={modalState} />}
   </div>
   )
 }
