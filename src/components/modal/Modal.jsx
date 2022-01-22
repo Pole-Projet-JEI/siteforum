@@ -35,11 +35,11 @@ function Modal(props) {
               <div className="text">
          
                 <div className="title_close">
-                  <h2>fouleeen</h2>
+                  <h2>{props.name}</h2>
                   <Close onClick={ toggleModalState } style={{color:"black",marginTop:"-45px",cursor:"pointer"}}/>
                 </div>
                 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, veniam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem possimus consequatur a tenetur quisquam placeat tempora fugiat facilis non explicabo.</p>
+                <p>{props.description}</p>
                 
               </div>
 

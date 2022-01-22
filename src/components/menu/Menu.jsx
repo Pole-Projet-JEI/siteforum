@@ -19,7 +19,7 @@ export default function Menu() {
     // 3 hooks
     if(inView) {
       animation.start({
-        x: 10,
+        x: '50vw',
         transition: {
           type: 'spring' , duration: 1.2,bounce: 0.7
         }

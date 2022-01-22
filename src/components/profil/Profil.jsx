@@ -40,7 +40,7 @@ export default function Profil(props) {
 
       <AddCircleOutlineIcon style={{width:"30px",height:"30px",transition:"0.5s ease-in"}} className={classes.icon} onClick = { toggleModalState  }  />
       
-      {modalState && <Modal />  }
+      {modalState && <Modal description={props.description} name={props.name}/>  }
        
       {/* descriptionIsOpen && <Description name={props.name} description={props.description} onCancel={closeDescriptionHandler} onConfirm={closeDescriptionHandler}/> */ }
       {/* descriptionIsOpen && <Backdrop onClick={closeDescriptionHandler} /> */}

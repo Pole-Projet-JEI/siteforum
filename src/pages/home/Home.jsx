@@ -10,10 +10,27 @@ import speakerphoto from './speaker1.png';
 import WhoAreWe from '../../components/whoarewe/whoarewe';
 import ObtenirTicket from '../../components/ObtenirTicket/ObtenirTicket';
 import { motion } from 'framer-motion';
+import Axios from 'axios';
+import { useState , useEffect} from 'react';
+
 
 function Home(props) {
 
- 
+
+  const [organisateur,setOrganisateur] = useState([]);
+  useEffect(() => {
+        
+    Axios.get('http://localhost:5000/organisateur/').then( (response) => {
+
+    setOrganisateur(response.data);
+     
+
+   })
+  .catch((error) => {
+    console.error(error);
+  });
+  
+  },[]);
   return (
     <motion.div  
      
@@ -35,42 +52,19 @@ function Home(props) {
         <Counter first={{number:30,title:"Entreprises"}} second={{number:10,title:"Speakers"}} third={{number:2000,title:"Présents au Forum"}} fourth={{number:8,title:"Workshop Offerts"}} />
         <Landing subtitle="NOTRE ÉQUIPE" title="NOTRE COMITÉ D'ORGANISATION" color="#004059"/>
           <div className={classes.cards}>
-            <div className={classes.card}>
-              <Profil name="Foulen Fouleni " photo={speakerphoto} description="Responsable Workshops Étudiante en troisième année en Génie Logiciel"/>
-              <h2>FoulenFouleni</h2>
-              <h4>ResponsableX</h4>
+          {organisateur.map((val,key) => {
+            return(
+              <div className={classes.card}>
+                <Profil name={val.firstname+""+val.lastname} photo={speakerphoto} description={val.description}/>
+                <h2>{val.firstname+""+val.lastname}</h2>
+                <h4>{val.title}</h4>
 
-            </div>
-            <div className={classes.card}>
-              <Profil name="Foulen Fouleni " description="Responsable Workshops Étudiante en troisième année en Génie Logiciel"/>
-              <h2>FoulenFouleni</h2>
-              <h4>ResponsableX</h4>
-
-            </div>
-            <div className={classes.card}>
-              <Profil name="Foulen Fouleni "  photo={speakerphoto} description="Responsable Workshops Étudiante en troisième année en Génie Logiciel"/>
-              <h2>FoulenFouleni</h2>
-              <h4>ResponsableX</h4>
-
-            </div>
-            <div className={classes.card}>
-              <Profil name="Foulen Fouleni " description="Responsable Workshops Étudiante en troisième année en Génie Logiciel"/>
-              <h2>FoulenFouleni</h2>
-              <h4>ResponsableX</h4>
-
-            </div>
-            <div className={classes.card}>
-              <Profil name="Foulen Fouleni " description="Responsable Workshops Étudiante en troisième année en Génie Logiciel"/>
-              <h2>FoulenFouleni</h2>
-              <h4>ResponsableX</h4>
-
-            </div>
-            <div className={classes.card}>
-              <Profil name="Foulen Fouleni " photo={speakerphoto} description="Responsable Workshops Étudiante en troisième année en Génie Logiciel"/>
-              <h2>FoulenFouleni</h2>
-              <h4>ResponsableX</h4>
-
-            </div>
+              </div>
+             
+            );
+          })}
+            
+            
           </div>
         <Galerie />
         <Footer />
