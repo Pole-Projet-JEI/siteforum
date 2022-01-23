@@ -7,5 +7,17 @@
   background-repeat: no-repeat;
   background-size: 100%;
   height: 78vh;
+  overflow-y: hidden;
+  
+}
+
+@media screen and (max-width:580px) {
+  .landing {
+    margin-bottom: 50px;
+  }
+
+  .header {
+    margin-bottom: -130px;
+  }
   
 }

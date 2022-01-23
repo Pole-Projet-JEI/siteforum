@@ -1,10 +1,15 @@
+.faq {
+ 
+}
+
 .first_part
 {
   background: url('back.jpg')  ;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 100%;
+  overflow-x: hidden;
+  overflow-y:hidden ;
   
 }
 .box

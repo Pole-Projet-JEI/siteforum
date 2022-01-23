@@ -10,7 +10,7 @@
   background-size: cover;
   transition: 1s ease-in-out;
   overflow-y: hidden;
-  
+  overflow-x: hidden;
  
 
 }

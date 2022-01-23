@@ -10,7 +10,7 @@ import { useAnimation } from 'framer-motion';
 function FormulaireStand() {
   
   const {ref, inView} = useInView({
-    threshold: 0.2 //20% should be visible
+    threshold: 0.7 //20% should be visible
   });
   
   //ref : element that we want to monitor : when ref in view => inView =true , else false
@@ -21,7 +21,7 @@ function FormulaireStand() {
     // 3 hooks
     if(inView) {
       animation.start({
-        y: 10,
+        x: 0,
         opacity: 1,
         transition: {
           type: 'spring' , duration: 1.2,bounce: 0.2
@@ -29,7 +29,7 @@ function FormulaireStand() {
       });
     }
     if(!inView) {
-      animation.start({y: '-200vh',
+      animation.start({x: '200vw',
       opacity:0,
       transition: {
         type: 'spring' , duration: 1,bounce: 0
@@ -40,7 +40,7 @@ function FormulaireStand() {
   },[inView]);
   return (
     <div ref={ref}>
-    <motion.div animate={animation} className={classes.card}>
+    <motion.div  className={classes.card}>
     
       <div className={classes.center}>
 
