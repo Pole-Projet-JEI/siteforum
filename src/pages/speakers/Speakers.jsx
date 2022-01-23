@@ -2,8 +2,7 @@ import React from 'react'
 import './speakers.css';
 import Navbar from '../../components/navbar/Navbar';
 import { motion } from 'framer-motion';
-import Profil from '../../components/profil/Profil';
-import speakerphoto from './speaker1.png';
+import Team from '../../components/team/Team';
 export default function Speakers(props) {
   
   return (
@@ -19,8 +18,10 @@ export default function Speakers(props) {
         <div className={"first_part"}>
         <Navbar/>
         </div>
+
+        <Team />
       
-       <Profil  photo={speakerphoto}/>
+       
 
     </motion.div>
       

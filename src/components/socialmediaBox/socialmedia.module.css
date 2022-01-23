@@ -8,7 +8,9 @@
 .icon {
   margin: 20px;
   color:#fff;
-  width: 50px;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
 }
 .title {
   text-align: center;

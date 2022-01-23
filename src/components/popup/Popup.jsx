@@ -55,7 +55,7 @@ export default function Popup(props) {
                        
                         <p className={classes.description}>{props.description}</p>
                         <div>
-                           <SocialMedia color="#00C1C1" size="40px"/>
+                           <SocialMedia fb={props.fb} insta={props.insta} linkedin={props.linkedin}color="#00C1C1" size="40px"/>
                         </div>
                     </div>
                 </motion.div>

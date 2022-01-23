@@ -12,19 +12,14 @@ import { AnimatePresence } from 'framer-motion';
 function App() {
   const pageVariants = {
     initial: {
-      opacity: 0,
-      
-      scale: 0.8
+      opacity: 0
     },
     in: {
-      opacity: 1,
-    
-      scale: 1
+      opacity: 1
     },
     out: {
-      opacity: 0,
+      opacity: 0
      
-      scale: 1.2
     }
   };
   

@@ -39,14 +39,14 @@ export default function Menu() {
     
     <div ref={ref} className={classes.menu}>
        <motion.div animate={animation} >
-   <ul className={classes.links}>
-     <li><Link className={classes.link} to="/">Accueil</Link></li>
-     <li><Link className={classes.link} to="/planning">Planning</Link></li>
-     <li><Link className={classes.link} to="/stand">Obtenez Votre Stand</Link></li>
-     <li><Link className={classes.link} to="/speakers">Nos Speakers</Link></li>
-     <li><Link className={classes.link} to="/faq">FAQ</Link></li>
-   </ul>      
- </motion.div>
+          <ul className={classes.links}>
+            <li><Link className={classes.link} to="/">Accueil</Link></li>
+            <li><Link className={classes.link} to="/planning">Planning</Link></li>
+            <li><Link className={classes.link} to="/stand">Obtenez Votre Stand</Link></li>
+            <li><Link className={classes.link} to="/speakers">Nos Speakers</Link></li>
+            <li><Link className={classes.link} to="/faq">FAQ</Link></li>
+          </ul>      
+       </motion.div>
 
     </div>
    

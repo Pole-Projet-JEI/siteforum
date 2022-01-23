@@ -25,7 +25,7 @@ export default function Faq(props) {
           <div className={classes.qts}>
             <Accordian />
           </div>
-         <SocialMedia title="Pour Toute Question"  />
+         <SocialMedia title="Pour Toute Question" fb="https://www.facebook.com/junior.entreprise.insat" insta="https://www.instagram.com/junior_entreprise_insat/" linkedin="https://www.linkedin.com/company/junior-entreprise-insat/"  />
         </div>
       </div>
       <Galerie />
