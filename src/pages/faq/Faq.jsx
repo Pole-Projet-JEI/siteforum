@@ -7,6 +7,7 @@ import Question from '../../components/question/Question';
 import Galerie from '../../components/galerie/Galerie';
 import Footer from '../../components/footer/Footer';
 import { motion } from 'framer-motion';
+import FormulaireContact from '../../components/formulaireContact/FormulaireContact';
 export default function Faq(props) {
   return (
     <motion.div 
@@ -20,6 +21,7 @@ export default function Faq(props) {
       className={classes.faq}>
       <div className={classes.first_part}>
         <Navbar />
+        <FormulaireContact/>
         <Landing subtitle="FAQ" title="Les Questions Les Plus Fréquentes"/>
         <div className={classes.box}>
           <div className={classes.qts}>
