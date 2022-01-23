@@ -19,7 +19,7 @@ export default function Planning(props) {
     exit="out"
     variants={props.pageVariants}
     transition={props.pageTransition}
-      className="planning"
+      className={classes.planning}
       >
       <div className={classes.first_part}>
        <Navbar/>

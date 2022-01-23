@@ -38,6 +38,9 @@
   cursor: pointer;
   outline: none;
 }
+.icon:hover {
+  color:#00C1C1;
+}
 
 .menu_wrapper {
   color:#ffff;
@@ -56,6 +59,6 @@
 }
 
 .link:hover {
-  color:#01bf71;
+  color:#00C1C1;
   transition: 0.2s ease-in-out;
-}
+} 

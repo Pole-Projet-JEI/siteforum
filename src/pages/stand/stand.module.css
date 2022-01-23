@@ -9,6 +9,24 @@
  
 
 }
+
+.stand {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+@media screen and (max-width: 1140px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  
+}
 .landing {
   margin-bottom: -70px;
 }

@@ -10,7 +10,6 @@ export default function Profil(props) {
 
   const toggleModalState = () => {
     setModalState(true);
-   
     const offset = window.scrollY ;
     document.body.style.position = 'fixed';
     document.body.style.top = `-${offset}px`;

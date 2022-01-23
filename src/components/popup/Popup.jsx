@@ -37,7 +37,7 @@ export default function Popup(props) {
             <motion.div className={classes.backdrop}
                 variants={backdropVariants} 
                 animate="visible"
-                initial="hidden"
+                initial="hidden" 
                 onClick={props.closePopup}
             >
                 <motion.div className={classes.popup}

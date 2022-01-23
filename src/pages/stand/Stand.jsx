@@ -17,13 +17,18 @@ export default function Stand(props) {
       exit="out"
       variants={props.pageVariants}
       transition={props.pageTransition}
-        className="stand">
+        className={classes.stand}>
         <div className={classes.first_part}>
         <Navbar/>
         <div className={classes.landing}>
           <Landing subtitle="ENTREPRISES" title="OBTENEZ VOTRE STAND"/>
         </div>
-        <FormulaireStand/>
+        <div className={classes.wrapper}>
+          <div className={classes.part}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque architecto sit reprehenderit nam quas dolores nisi reiciendis minus harum odit, maiores aperiam laboriosam alias. Doloremque explicabo ex nulla, nostrum omnis deserunt maiores numquam amet aliquid aspernatur architecto, sint vero repellat soluta, eveniet fugiat vitae esse dolorum nesciunt porro possimus? Nisi.</div>
+          <div className={classes.part}><FormulaireStand/></div>
+          
+        </div>
+        
         </div>
         <InsatIntro />
         <Counter first={{number:6,title:"Entreprises"}} second={{number:40,title:"Clubs Actifs"}} third={{number:3000,title:"Etudiants"}} fourth={{number:300,title:"Evénements Par An"}} />
