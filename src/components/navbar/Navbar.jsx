@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '../menu/Menu';
 import { useState } from 'react';
-import Close from '@mui/icons-material/Close';
+
 
 
 
@@ -16,12 +16,21 @@ export default function Navbar() {
 
   const handleClick = () => {
     setMenuIsOpen(true);
+    document.body.style="overflow-y:hidden";
+    /*const offset = window.scrollY ;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${offset}px`; */
   }
   
   function closeMenuHandler() {
 
     setMenuIsOpen(false);
-    
+    document.body.style="overflow-y:unset";
+   /* const scrollY = document.body.style.top;
+     document.body.style.position = '';
+     document.body.style.top = '';
+     window.scrollTo(0, parseInt(scrollY || '0') * -1); 
+    */
   }
   const changeBackground = () => {
     if (window.scrollY >= 450) {
@@ -49,10 +58,10 @@ export default function Navbar() {
       <div className={classes.menu}>
         
         { !menuIsOpen &&  <MenuIcon onClick={handleClick} className={classes.menu} style={{width:"30px",height:"30px",transition: "all 2s ease"}}/> }
-        { menuIsOpen &&  <Close onClick={closeMenuHandler} className={classes.menu} style={{width:"30px",height:"30px",transition: "all 2s ease"}}/>}
+       
        
       </div>
-      { menuIsOpen && <Menu className={classes.responsive_menu} onClick={closeMenuHandler}/> }
+      { menuIsOpen && <Menu close={closeMenuHandler}  onClick={closeMenuHandler}/> }
      
     </div>
   )

@@ -1,0 +1,87 @@
+.accordianSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 3rem;
+    scroll-behavior: smooth;
+}
+.container{
+    margin: auto;
+}
+.container h1{
+    font-size: 1.3rem;
+    font-weight: normal;
+    letter-spacing: 1.2px;
+}
+.container p{
+    font-size: 1.1rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+    border-top: 1px #00c1c134 solid ;
+    padding-top: 0.8rem;
+}
+.faq{
+    border: white 1px solid;
+    margin: 1.5rem 1rem;
+    padding: 0.9rem 1.6rem;
+    width: 40rem;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 0.2rem;
+}
+.reponse{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.icon{
+    margin: 0.3rem;
+    color:#fff;
+    vertical-align: middle;
+    margin-right: 0.7rem;
+}
+@media screen and (max-width:686px) {
+    .faq{
+        width: 32rem;
+    }
+    .container h1{
+        font-size: 1.1rem;
+    }
+    .container p{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:576px) {
+    .faq{
+        width: 28rem;
+    }
+    .container h1{
+        font-size: 1rem;
+    }
+    .container p{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:300px) {
+    .faq{
+        width: 16rem;
+    }
+    .container h1{
+        font-size: 0.8rem;
+    }
+    .container p{
+        font-size: 0.6rem;
+    }
+}

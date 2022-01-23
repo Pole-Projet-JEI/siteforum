@@ -1,11 +1,28 @@
-import React from 'react'
+import React , {useState, useEffect} from 'react'
 import classes from './workshopItem.module.css';
 import Profil from './../profil/Profil';
-import { motion } from 'framer-motion';
+import Axios from 'axios';
+import FileBase64 from 'react-file-base64';
+
 export default function WorkshopItem(props) {
+  
+  const [formateur,setFormateur] = useState({});
+  useEffect(() => {
+        
+    Axios.get('http://localhost:5000/formateur/'+props.formateur).then( (response) => {
+
+    setFormateur(response.data);
+     
+
+   })
+  .catch((error) => {
+    console.error(error);
+  });
+  
+  },[]);
   return (
     <div className={classes.workshop_item}>
-      <motion.div animate={props.animate} className={classes.description}>
+      <div className={classes.description}>
         <div className={classes.details}>
 
           <div className={classes.temp}>
@@ -23,11 +40,12 @@ export default function WorkshopItem(props) {
           <p>{props.description}</p>
 
         </div>
-      </motion.div>
-      <motion.div animate={props.animate}  className={classes.profil}>
-        <Profil photo={props.photo} name={props.formateurN} description={props.formateurD} />
+      </div>
 
-      </motion.div>
+      <div className={classes.profil}>
+      <Profil fb={formateur.fb} insta={formateur.insta} linkedin={formateur.linkedin} name={formateur.firstname+" "+formateur.lastname} title={formateur.title} photo={formateur.image} description={formateur.description}/>
+
+      </div>
 
       
     </div>

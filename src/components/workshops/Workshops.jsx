@@ -6,10 +6,26 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
+import Axios from 'axios';
+import { useState } from 'react';
 export default function Workshops(props) {
   
+  const [workshops,setWorkshops] = useState([]);
+  useEffect(() => {
+        
+    Axios.get('http://localhost:5000/workshop/').then( (response) => {
+
+    setWorkshops(response.data);
+     
+
+   })
+  .catch((error) => {
+    console.error(error);
+  });
+  
+  },[]);
   const {ref, inView} = useInView({
-    threshold: 0.2 //20% should be visible
+    threshold: 0.1 //20% should be visible
   });
   
   //ref : element that we want to monitor : when ref in view => inView =true , else false
@@ -39,14 +55,22 @@ export default function Workshops(props) {
     
       <div ref={ref} className={classes.workshops} >
         <motion.h1 animate={animation}>{props.type}</motion.h1>
-        <WorkshopItem animate={animation} title="WORKSHOP DESIGN THINKING" place="Orange Center INSAT" time="2:30 pm" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" formateurN="FOULEN FOULENI" formateurD="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" photo={speaker} />
-        <hr />
-        <WorkshopItem animate={animation} title="WORKSHOP DESIGN THINKING" place="Orange Center INSAT" time="2:30 pm" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" formateurN="FOULEN FOULENI" formateurD="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" photo={speaker}  />
-        <hr />
-        <WorkshopItem animate={animation} title="WORKSHOP DESIGN THINKING" place="Orange Center INSAT" time="2:30 pm" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" formateurN="FOULEN FOULENI" formateurD="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" photo={speaker}  />
-        <hr />
-        <WorkshopItem animate={animation} title="WORKSHOP DESIGN THINKING" place="Orange Center INSAT" time="2:30 pm" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" formateurN="FOULEN FOULENI" formateurD="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus omnis et, odit perspiciatis repellendus dolore ab hic ipsum eius adipisci!" photo={speaker}  />
+        {workshops.map((val,key) => {
+            return(
+              <div>
+                 {props.type === val.type && <WorkshopItem animate={animation} title={val.title} place={val.place} time={val.time} description={val.description} photo={speaker} formateur={val.formateur} />}
+                 
+              </div>
+              
+              
+             
+             
+            );
+          }) }
+          <hr />
         
+     
+    
 
       </div>
 

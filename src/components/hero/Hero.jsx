@@ -23,14 +23,16 @@ export default function Hero() {
     // 3 hooks
     if(inView) {
       animation.start({
-        x: 0,
+        y: 10,
+        opacity: 1,
         transition: {
-          type: 'spring' , duration: 1.2,bounce: 0
+          type: 'spring' , duration: 1.2,bounce: 0.2
         }
       });
     }
     if(!inView) {
-      animation.start({x: '-100vw',
+      animation.start({y: '-200vh',
+      opacity:0,
       transition: {
         type: 'spring' , duration: 1,bounce: 0
       }
@@ -52,8 +54,7 @@ export default function Hero() {
 
         <div className={classes.section}>
           <div className={classes.btn}>
-            
-            <Button  content="OBTENEZ VOTRE TICKET" padding="150px" hover="#F9138F" link="planning"/>
+            <Button  content="OBTENEZ VOTRE TICKET" padding="120px" hover="#F9138F" link="planning"/>
           </div>
           <div className={classes.img}>
             <img src={jeilogo} alt="p1" />
@@ -64,7 +65,7 @@ export default function Hero() {
         
         <div className={classes.section}>
           <div className={classes.btn}>
-            <Button content="OBTENEZ VOTRE STAND"  padding="150px" link="stand"/>
+            <Button content="OBTENEZ VOTRE STAND"  padding="120px" link="stand"/>
           </div>
           <div className={classes.img}>
             <img src={insatlogo} alt="p2" />

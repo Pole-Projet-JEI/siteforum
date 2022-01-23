@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 export default function Planning(props) {
 
   const [isToggled, setIsToggled] = useState(false);
- 
+  document.body.style="overflow-y:unset";
   return (
     <motion.div 
     initial="initial"
@@ -19,7 +19,7 @@ export default function Planning(props) {
     exit="out"
     variants={props.pageVariants}
     transition={props.pageTransition}
-      className="planning"
+      className={classes.planning}
       >
       <div className={classes.first_part}>
        <Navbar/>

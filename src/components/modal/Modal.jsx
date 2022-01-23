@@ -3,15 +3,17 @@ import "./modal.css";
 import { useState } from "react";
 import SocialMedia from "../socialmediaBox/SocialMedia";
 import Close from "@mui/icons-material/Close";
+import speaker from './speaker1.png';
 
-
-function Modal() {
+function Modal(props) {
   
   const [modalState, setModalState] = useState(true);
 
   const toggleModalState = () => {
-    setModalState(!modalState);
+    setModalState(false);
+    document.body.style='overflow:auto;';
   }
+  
   return (
     
     <div className={`modalBackground modalShowing-${modalState}`}>
@@ -20,7 +22,7 @@ function Modal() {
 
           <div className="modalImage">
             <img
-              src="https://images.unsplash.com/photo-1586931775007-ad3c3913f216?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80"
+              src={speaker}
               alt="modal pic"
             />
           </div>
@@ -33,11 +35,11 @@ function Modal() {
               <div className="text">
          
                 <div className="title_close">
-                  <h2>fouleeen</h2>
-                  <Close onClick={ toggleModalState } style={{color:"black",marginTop:"-45px",cursor:"pointer"}}/>
+                  <h2>{props.name}</h2>
+                  <Close onClick={ toggleModalState } style={{color:"black",cursor:"pointer"}}/>
                 </div>
                 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, veniam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem possimus consequatur a tenetur quisquam placeat tempora fugiat facilis non explicabo.</p>
+                <p>{props.description}</p>
                 
               </div>
 

@@ -9,14 +9,23 @@
 .card {
 	position: sticky;
 	top: 0;
-	
-  
+	padding-top: calc(var(--index) * var(--card-top-offset));
   margin: 50px;
   margin-top: 30px;
-  width: 90%;
-  left: 100%;
-  max-width: 36.6rem;
+  width: 35rem;
 
+}
+@media screen and (max-width:600px) {
+  .card {
+    width: 30rem;
+  }
+  
+}
+@media screen and (max-width:590px) {
+  .card {
+    width: 28rem;
+  }
+  
 }
 .control {
   margin-bottom: 0.5rem;

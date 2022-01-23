@@ -1,9 +1,13 @@
+.home {
+  overflow-x: hidden;
+ }
 .first_part
 {
   background: url('back.jpg')  ;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  overflow-x: hidden;
 
 
   
@@ -17,6 +21,7 @@
   
   margin: 1rem;
   margin-top: -50px;
+  overflow-x: unset;
   
  
 }
