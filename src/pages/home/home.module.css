@@ -1,5 +1,6 @@
 .home {
   overflow-x: hidden;
+  overflow-y: hidden;
  }
 .first_part
 {
@@ -8,6 +9,7 @@
   background-repeat: no-repeat;
   width: 100%;
   overflow-x: hidden;
+ 
 
 
   
