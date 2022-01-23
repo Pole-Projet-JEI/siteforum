@@ -2,6 +2,7 @@ import React , {useState, useEffect} from 'react'
 import classes from './workshopItem.module.css';
 import Profil from './../profil/Profil';
 import Axios from 'axios';
+import FileBase64 from 'react-file-base64';
 
 export default function WorkshopItem(props) {
   
@@ -40,8 +41,9 @@ export default function WorkshopItem(props) {
 
         </div>
       </div>
+
       <div className={classes.profil}>
-      <Profil fb={formateur.fb} insta={formateur.insta} linkedin={formateur.linkedin} name={formateur.firstname+" "+formateur.lastname} title={formateur.title} photo={props.photo} description={formateur.description}/>
+      <Profil fb={formateur.fb} insta={formateur.insta} linkedin={formateur.linkedin} name={formateur.firstname+" "+formateur.lastname} title={formateur.title} photo={formateur.image} description={formateur.description}/>
 
       </div>
 

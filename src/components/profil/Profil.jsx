@@ -3,7 +3,7 @@ import {useState} from 'react';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import classes from './profil.module.css';
 import Popup from '../popup/Popup';
-
+import FileBase64 from 'react-file-base64';
 
 export default function Profil(props) {
   const [modalState, setModalState] = useState(false)
@@ -22,6 +22,8 @@ export default function Profil(props) {
      document.body.style.top = '';
      window.scrollTo(0, parseInt(scrollY || '0') * -1);
    }
+
+   
   
  
   

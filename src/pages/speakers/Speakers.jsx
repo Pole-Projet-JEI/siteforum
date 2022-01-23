@@ -2,7 +2,7 @@ import React from 'react'
 import './speakers.css';
 import Navbar from '../../components/navbar/Navbar';
 import { motion } from 'framer-motion';
-import Team from '../../components/team/Team';
+import Menu from '../../components/menu/Menu';
 export default function Speakers(props) {
   
   return (
@@ -19,7 +19,7 @@ export default function Speakers(props) {
         <Navbar/>
         </div>
 
-        <Team />
+       
       
        
 
