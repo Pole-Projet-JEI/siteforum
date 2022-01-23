@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 export default function Planning(props) {
 
   const [isToggled, setIsToggled] = useState(false);
- 
+  document.body.style="overflow-y:unset";
   return (
     <motion.div 
     initial="initial"

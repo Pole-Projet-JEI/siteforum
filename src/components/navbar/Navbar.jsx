@@ -17,8 +17,7 @@ export default function Navbar() {
   const handleClick = () => {
     setMenuIsOpen(true);
     document.body.style="overflow-y:hidden";
-    /*  const offset = window.scrollY ;
-    document.body.style.background = "#01212E"
+    /*const offset = window.scrollY ;
     document.body.style.position = 'fixed';
     document.body.style.top = `-${offset}px`; */
   }
@@ -28,7 +27,6 @@ export default function Navbar() {
     setMenuIsOpen(false);
     document.body.style="overflow-y:unset";
    /* const scrollY = document.body.style.top;
-    document.body.style.background = "#fff"
      document.body.style.position = '';
      document.body.style.top = '';
      window.scrollTo(0, parseInt(scrollY || '0') * -1); 

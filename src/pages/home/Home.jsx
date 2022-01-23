@@ -5,19 +5,15 @@ import Hero from '../../components/hero/Hero';
 import Footer from '../../components/footer/Footer';
 import Counter from '../../components/counter/Counter';
 import Galerie from '../../components/galerie/Galerie';
-import ProfilOrganisateur from '../../components/profilOrganisateur/ProfilOrganisateur';
-import speakerphoto from './speaker1.png';
 import WhoAreWe from '../../components/whoarewe/whoarewe';
 import ObtenirTicket from '../../components/ObtenirTicket/ObtenirTicket';
 import { motion } from 'framer-motion';
-import Axios from 'axios';
-import { useState , useEffect} from 'react';
-import Popup from '../../components/popup/Popup';
+
 import Team from '../../components/team/Team';
 
 function Home(props) {
   
- 
+  document.body.style="overflow-y:unset";
   return (
     <motion.div  
      

@@ -8,6 +8,8 @@ import Footer from '../../components/footer/Footer';
 import { motion } from 'framer-motion';
 import Accordian from '../../components/accordian/Accordian';
 export default function Faq(props) {
+ 
+  document.body.style="overflow-y:unset";
   return (
     <motion.div 
       

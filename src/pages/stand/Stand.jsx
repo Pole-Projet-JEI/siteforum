@@ -8,6 +8,7 @@ import InsatIntro from '../../components/insatIntro/InsatIntro';
 import Landing from '../../components/landing/Landing';
 import { motion } from 'framer-motion';
 export default function Stand(props) {
+  document.body.style="overflow-y:unset";
   return (
     
       <motion.div 

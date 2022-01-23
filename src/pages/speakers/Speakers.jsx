@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Menu from '../../components/menu/Menu';
 export default function Speakers(props) {
   
+  document.body.style="overflow-y:unset";
   return (
     
      <motion.div 
