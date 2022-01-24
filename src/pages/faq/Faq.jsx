@@ -7,6 +7,7 @@ import Galerie from '../../components/galerie/Galerie';
 import Footer from '../../components/footer/Footer';
 import { motion } from 'framer-motion';
 import Accordian from '../../components/accordian/Accordian';
+import FormulaireContact from '../../components/formulaireContact/FormulaireContact';
 export default function Faq(props) {
  
   document.body.style="overflow-y:unset";
@@ -22,6 +23,7 @@ export default function Faq(props) {
       className={classes.faq}>
       <div className={classes.first_part}>
         <Navbar />
+        <FormulaireContact/>
         <Landing subtitle="FAQ" title="Les Questions Les Plus Fréquentes"/>
         <div className={classes.box}>
           <div className={classes.qts}>
