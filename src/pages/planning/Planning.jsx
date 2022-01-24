@@ -24,7 +24,7 @@ export default function Planning(props) {
       <div className={classes.first_part}>
        <Navbar/>
       </div>
-      <Header subtitle="JOUR J" title="NOTRE PLANNING DU JOUR" color="#fff"/>
+      <Header subtitle="JOUR J" title="PLANNING DU JOUR" color="#fff"/>
       <div className={classes.workshops_container}>
         <div  className={classes.intro}>
             <h2 className={classes.date}>Le 24 Novembre 2021</h2>

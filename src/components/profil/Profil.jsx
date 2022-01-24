@@ -10,16 +10,18 @@ export default function Profil(props) {
 
   const toggleModalState = () => {
     setModalState(true);
-    const offset = window.scrollY ;
+   document.body.style="overflow-y:hidden";
+   /* const offset = window.scrollY ;
     document.body.style.position = 'fixed';
-    document.body.style.top = `-${offset}px`;
+    document.body.style.top = `-${offset}px`;*/
    }
    const closeModal = () => {
      setModalState(false);
-     const scrollY = document.body.style.top;
+     document.body.style="overflow-y:unset";
+     /*const scrollY = document.body.style.top;
      document.body.style.position = '';
      document.body.style.top = '';
-     window.scrollTo(0, parseInt(scrollY || '0') * -1);
+     window.scrollTo(0, parseInt(scrollY || '0') * -1);*/
    }
 
    
@@ -32,7 +34,7 @@ export default function Profil(props) {
 
       <AddCircleOutlineIcon style={{width:"30px",height:"30px",transition:"0.5s ease-in"}} className={classes.icon} onClick = { toggleModalState  }  />
       
-      {modalState && <Popup name={props.name} description={props.description} title={props.title} img={props.photo} closePopup = {closeModal} showPopup={modalState} />}
+      {modalState && <Popup fb={props.fb} insta={props.insta} linkedin={props.linkedin} name={props.name} description={props.description} title={props.title} img={props.photo} closePopup = {closeModal} showPopup={modalState} />}
   </div>
   )
 }

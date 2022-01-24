@@ -41,7 +41,7 @@ export default function Landing(props) {
      
       <h3 className={classes.subtitle}>{props.subtitle}</h3>
       <h2 className={classes.title} style={{color:props.color}}>{props.title}</h2>
-      <svg >
+      <svg style={ {width:"800px",marginLeft:"220px"}}>
       
         <path d="M10,163 C5,159 490,120 540,170" stroke="#00C1C1"
               strokeWidth="5"
