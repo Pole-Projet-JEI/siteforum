@@ -1,4 +1,3 @@
-
 import React from "react";
 import classes from "./formulaireStand.module.css";
 import Button from "../button/Button";
