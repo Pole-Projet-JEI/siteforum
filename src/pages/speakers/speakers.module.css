@@ -1,16 +1,12 @@
-.first_part
-{
-  background: url('back.jpg')  ;
+.first_part {
+  background: url("back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 130px;
   overflow-y: hidden;
   align-self: center;
-  
-
 }
 .speaker {
- 
   overflow-x: hidden;
 }

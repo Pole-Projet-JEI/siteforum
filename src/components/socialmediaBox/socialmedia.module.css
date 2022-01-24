@@ -3,20 +3,22 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 60px;
 }
 
 .icon {
   margin: 20px;
-  color:#fff;
+  color: #fff;
   width: 70px;
   height: 70px;
+  margin-bottom: 0px;
   cursor: pointer;
 }
 .title {
   text-align: center;
-  color:#fff;
+  color: #004059;
   font-weight: 400;
   font-size: 1.4rem;
-  margin-bottom: 10px;
+  margin-top: 40px;
   line-height: 42px;
 }
