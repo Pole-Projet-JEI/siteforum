@@ -1,7 +1,6 @@
 import React from 'react'
 import classes from './workshops.module.css';
 import WorkshopItem from './../workshopItem/WorkshopItem';
-import speaker from './speaker1.png';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
@@ -58,7 +57,7 @@ export default function Workshops(props) {
         {workshops.map((val,key) => {
             return(
               <div>
-                 {props.type === val.type && <WorkshopItem animate={animation} title={val.title} place={val.place} time={val.time} description={val.description} photo={speaker} formateur={val.formateur} />}
+                 {props.type === val.type && <WorkshopItem animate={animation} title={val.title} place={val.place} time={val.time} description={val.description} formateur={val.formateur} />}
                  
               </div>
               
