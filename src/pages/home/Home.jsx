@@ -8,6 +8,7 @@ import Galerie from '../../components/galerie/Galerie';
 import WhoAreWe from '../../components/whoarewe/whoarewe';
 import ObtenirTicket from '../../components/ObtenirTicket/ObtenirTicket';
 import Exposant from '../../components/exposant/Exposant';
+import FormulaireContact from '../../components/formulaireContact/FormulaireContact';
 import { motion } from 'framer-motion';
 
 import Team from '../../components/team/Team';
@@ -38,6 +39,7 @@ function Home(props) {
         <Exposant />
         <Landing subtitle="NOTRE ÉQUIPE" title="NOTRE COMITÉ D'ORGANISATION" color="#004059"/>
         <Team />
+        <FormulaireContact />
         <Galerie />
         <Footer />
         

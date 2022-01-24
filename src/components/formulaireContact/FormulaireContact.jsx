@@ -5,9 +5,9 @@ import Landing from "../landing/Landing";
 
 function FormulaireContact() {
   return (
-<div>
+<div className={classes.form_contact}>
       <div className={classes.title}>
-        <Landing color="#fff" title="N'hesitez Pas A Nous Envoyer Votre Message" />
+        <Landing color="#fff" subtitle="CONTACT" title="N'hesitez Pas A Nous Envoyer Votre Message" />
       </div>
       <form className={classes.feedback}>
       <div className={classes.feedback} style={{float:'left'}}>
