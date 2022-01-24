@@ -46,10 +46,10 @@ export default function Slider() {
 
     return (
         <div>
-            <Landing subtitle="FORUM" title="Editions Précédentes Du Forum INSAT Entreprise ?" color="#004059" />
+            <Landing subtitle="FORUM" title="Editions Précédentes Du Forum" color="#004059" />
 
         
-        <div className="container-slider">
+            <div className="container-slider">
             {dataSlider.map((obj, index) => {
                 return (
                     <div
