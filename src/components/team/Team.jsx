@@ -1,8 +1,6 @@
 import React from 'react';
 import ProfilOrganisateur from '../profilOrganisateur/ProfilOrganisateur';
-import speakerphoto from './speaker1.png';
 import classes from './team.module.css';
-import { motion } from 'framer-motion';
 import { useState , useEffect} from 'react';
 
 import Axios from 'axios';
@@ -31,7 +29,7 @@ export default function Team() {
             {organisateur.map((val,key) => {
             return(
                 <div className={classes.slide} >
-                    <ProfilOrganisateur fb={val.fb} insta={val.insta} linkedin={val.linkedin} name={val.firstname+" "+val.lastname} title={val.title} photo={speakerphoto} description={val.description}/>
+                    <ProfilOrganisateur fb={val.fb} insta={val.insta} linkedin={val.linkedin} name={val.firstname+" "+val.lastname} title={val.title} photo={process.env.PUBLIC_URL + `/organisateur/organisateur${val.id}.jpg`} description={val.description}/>
                     <h2>{val.firstname+""+val.lastname}</h2>
                     <h4>{val.title}</h4>
                 </div>
@@ -40,7 +38,7 @@ export default function Team() {
           {organisateur.map((val,key) => {
             return(
                 <div className={classes.slide} >
-                    <ProfilOrganisateur fb={val.fb} insta={val.insta} linkedin={val.linkedin} name={val.firstname+" "+val.lastname} title={val.title} photo={speakerphoto} description={val.description}/>
+                    <ProfilOrganisateur fb={val.fb} insta={val.insta} linkedin={val.linkedin} name={val.firstname+" "+val.lastname} title={val.title} photo={process.env.PUBLIC_URL + `/organisateur/organisateur${val.id}.jpg`} description={val.description}/>
                     <h2>{val.firstname+""+val.lastname}</h2>
                     <h4>{val.title}</h4>
                 </div>

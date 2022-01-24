@@ -1,9 +1,24 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Slider.css'
 import BtnSlider from './BtnSlider'
-import dataSlider from './dataSlider'
-
+import Landing from '../landing/Landing';
+import Axios from 'axios';
 export default function Slider() {
+
+    const [dataSlider,setDataSlider] = useState([]);
+    useEffect(() => {
+          
+      Axios.get('http://localhost:5000/galerie/').then( (response) => {
+  
+      setDataSlider(response.data);
+       
+  
+     })
+    .catch((error) => {
+      console.error(error);
+    });
+    
+    },[]);
 
     const [slideIndex, setSlideIndex] = useState(1)
 
@@ -30,6 +45,10 @@ export default function Slider() {
     }
 
     return (
+        <div>
+            <Landing subtitle="FORUM" title="Editions Précédentes Du Forum INSAT Entreprise ?" color="#004059" />
+
+        
         <div className="container-slider">
             {dataSlider.map((obj, index) => {
                 return (
@@ -47,13 +66,14 @@ export default function Slider() {
             <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
 
             <div className="container-dots">
-                {Array.from({length: 5}).map((item, index) => (
+                {Array.from({length: dataSlider.length}).map((item, index) => (
                     <div 
                     onClick={() => moveDot(index + 1)}
                     className={slideIndex === index + 1 ? "dot active" : "dot"}
                     ></div>
                 ))}
             </div>
+        </div>
         </div>
     )
 }
