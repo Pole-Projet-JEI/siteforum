@@ -36,7 +36,7 @@
   .profil:hover .icon{
    opacity: 0.5;
   }
-  .profil:hover .img{
+  .profil:hover {
   transform: scale(1.099);
   }
   

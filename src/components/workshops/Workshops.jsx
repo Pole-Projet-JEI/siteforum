@@ -57,16 +57,17 @@ export default function Workshops(props) {
         {workshops.map((val,key) => {
             return(
               <div>
-                 {props.type === val.type && <WorkshopItem animate={animation} title={val.title} place={val.place} time={val.time} description={val.description} formateur={val.formateur} />}
+                 {props.type === val.type && (<div><WorkshopItem animate={animation} title={val.title} place={val.place} time={val.time} description={val.description} formateur={val.formateur} /><hr /></div>)}
                  
               </div>
+              
               
               
              
              
             );
           }) }
-          <hr />
+         
         
      
     

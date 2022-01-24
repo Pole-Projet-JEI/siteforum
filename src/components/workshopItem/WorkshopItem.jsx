@@ -45,6 +45,7 @@ export default function WorkshopItem(props) {
       <Profil fb={formateur.fb} insta={formateur.insta} linkedin={formateur.linkedin} name={formateur.firstname+" "+formateur.lastname} title={formateur.title} photo={process.env.PUBLIC_URL + `/formateur/formateur${formateur.id}.jpg`} description={formateur.description}/>
 
       </div>
+      
 
       
     </div>
