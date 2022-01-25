@@ -10,8 +10,8 @@ import ObtenirTicket from '../../components/ObtenirTicket/ObtenirTicket';
 import Exposant from '../../components/exposant/Exposant';
 import FormulaireContact from '../../components/formulaireContact/FormulaireContact';
 import { motion } from 'framer-motion';
-
 import Team from '../../components/team/Team';
+import JoinUs from '../../components/joinus/joinus';
 
 function Home(props) {
   
@@ -39,6 +39,9 @@ function Home(props) {
         <Exposant />
         <Landing subtitle="NOTRE ÉQUIPE" title="NOTRE COMITÉ D'ORGANISATION" color="#004059"/>
         <Team />
+        <div>
+        <JoinUs />
+        </div>
         <FormulaireContact />
         <Galerie />
         <Footer />

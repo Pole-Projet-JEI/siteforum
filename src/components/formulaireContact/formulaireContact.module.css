@@ -11,9 +11,7 @@
   padding: 50px;
 }
 .title {
-  margin-bottom: -70px;
   margin-left: 10px;
-  margin-top: -20px;
 }
 .feedback {
   margin-bottom: 0.5rem;
@@ -78,3 +76,8 @@ textarea {
 }
 
 
+@media screen and (max-width:850px) {
+  .form_contact {
+    margin-top: 23rem;
+  }
+}
