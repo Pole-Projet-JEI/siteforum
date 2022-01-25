@@ -1,0 +1,16 @@
+.map{
+   padding: 1rem;
+   height: 100%;
+   width: 80%;
+}
+@media screen and (max-width:850px) {
+    .map{
+        
+        border-radius: 20%;
+        height: 50%;
+        width: 90%;
+        position: absolute;
+        margin-left: auto;
+     }
+    
+}
