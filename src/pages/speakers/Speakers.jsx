@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import classes from "./Speakers.module.css";
+import classes from "./speakers.module.css";
 import Navbar from "../../components/navbar/Navbar";
 import { motion } from "framer-motion";
 import Axios from "axios";
