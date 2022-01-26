@@ -1,0 +1,63 @@
+.joinUs{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 3px;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    margin: 2rem;
+}
+.rejoignez{
+    width: 40%;
+    padding: 1rem;
+    align-items: center;
+    margin: auto auto auto 5rem;
+    vertical-align: middle;
+}
+.rejoignez h1{
+    color: #01212e;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.rejoignez p {
+    line-height: 1.4rem;
+    font-size: 0.8rem;
+    color: #A39D9D;
+}
+.rejoignez h2{
+    color: #00C1C1;
+    font-size: 1.1rem;
+    margin: 1rem auto;
+}
+span{
+    color: #514D4D;
+    font-weight: bold;
+}
+.map{
+    width: 50%;
+    align-items: center;
+    
+}
+@media screen and (max-width:850px) {
+    .joinUs{
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 3px;
+        justify-content: space-evenly;
+
+    }
+    .rejoignez{
+        width: 100%;
+        margin: auto;
+      
+    }
+    .rejoignez *{
+        margin-left: auto;
+    }
+    .map{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        
+    }
+}
