@@ -1,5 +1,7 @@
 .stand {
   overflow-x: hidden;
+  overflow-y: hidden;
+  
 }
 .first_part
 {
@@ -14,6 +16,8 @@
 
 }
 .photo_part {
+  overflow-x: hidden;
+  overflow-y:hidden ;
 
 }
 .stand {
@@ -26,12 +30,24 @@
   place-items: center;
   justify-content: center;
   padding: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1220px) {
   .wrapper {
     grid-template-columns: 1fr;
     align-items: center;
+
+  }
+  .photo_part {
+    margin-bottom: 30px;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .photo_part {
+    display: none;
   }
   
 }

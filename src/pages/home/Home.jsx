@@ -39,10 +39,10 @@ function Home(props) {
         <Exposant />
         <Landing subtitle="NOTRE ÉQUIPE" title="NOTRE COMITÉ D'ORGANISATION" color="#004059"/>
         <Team />
+        <FormulaireContact />
         <div>
         <JoinUs />
         </div>
-        <FormulaireContact />
         <Galerie />
         <Footer />
         

@@ -4,7 +4,6 @@ import Navbar from "../../components/navbar/Navbar";
 import { motion } from "framer-motion";
 import Axios from "axios";
 import Landing from "../../components/landing/Landing";
-import Exposant from "../../components/exposant/Exposant";
 import Speaker from "../../components/speaker/speaker";
 
 export default function Speakers(props) {
