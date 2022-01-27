@@ -1,27 +1,30 @@
 import React from "react";
 import Cardsocial from "../cardsocial/Cardsocial";
-import { SpeakersData } from "../../pages/speakers/SpeakersData";
-import photo from "../../pages/speakers/speaker.jpg";
-
+import CardsocialInverted from "../cardSocialInverted/CardSocialInverted";
 export default function Speaker(props) {
   return (
     <div>
-      <ul>
-        {SpeakersData.map((val, key) => {
-          return (
-            <li key={key}>
-              <Cardsocial
-                name={val.name}
-                description={val.description}
-                lienfb={val.lienfb}
-                lieninsta={val.lieninsta}
-                lienlink={val.lienlink}
-                sourceimg={photo}
-              />
-            </li>
-          );
-        })}
-      </ul>
+
+{ (props.id % 2 !==0 ? <Cardsocial
+                name={props.name}
+                description={props.description}
+                title={props.title}
+                fb={props.fb}
+                insta={props.insta}
+                linkedin={props.linkedin}
+                image={props.image}
+              /> : <CardsocialInverted
+              name={props.name}
+              description={props.description}
+              title={props.title}
+              fb={props.fb}
+              insta={props.insta}
+              linkedin={props.linkedin}
+              image={props.image}
+            /> ) }
+           
+              
+    
     </div>
   );
 }

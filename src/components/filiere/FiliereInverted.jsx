@@ -1,12 +1,12 @@
 import React from "react";
-import Card from "../card/Card";
+import CardInverted from "../card/CardInverted";
 
 export default function Filiere(props) {
   return (
     <div>
      
         
-              <Card
+              <CardInverted
                 name={props.name}
                 description={props.description}
                 image={props.image}
