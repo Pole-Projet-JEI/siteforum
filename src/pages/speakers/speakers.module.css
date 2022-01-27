@@ -1,5 +1,5 @@
 .first_part {
-  background: url("back.jpg");
+  background: var(--primary-color);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -9,4 +9,5 @@
 }
 .speaker {
   overflow-x: hidden;
+  overflow-y: hidden;
 }

@@ -56,10 +56,9 @@ export default function ObtenirTicket(props) {
 </div>
 
 <div className={classes.card}  >
-  <motion.div className={classes.carreau}  whileHover={{ scale: 1.15, rotate: 360 }}
+  <motion.div className={classes.carreau}  whileHover={{ scale: 1.15}}
   whileTap={{
-    scale: 0.8,
-    rotate: -360
+    scale: 0.8
   }} >
     
    <div className={classes.content}>
@@ -75,10 +74,9 @@ export default function ObtenirTicket(props) {
   </motion.div>
 
 
-  <motion.div whileHover={{ scale: 1.15, rotate: 360 }}
+  <motion.div whileHover={{ scale: 1.15 }}
   whileTap={{
-    scale: 0.8,
-    rotate: -360
+    scale: 0.8
   }}  className={classes.carreau} >
   <div className={classes.content}>
     <h2> Ambiance </h2>
@@ -93,10 +91,9 @@ export default function ObtenirTicket(props) {
     <CelebrationIcon className={classes.icon} fontSize="large"  style={{color:"#f8f8f8",paddingLeft:"5px" ,width:"60px",height:"60px",backgroundColor:"#004059",borderTopLeftRadius:"50%"}}  />
   </motion.div>
 
-  <motion.div whileHover={{ scale: 1.15, rotate: 360 }}
+  <motion.div whileHover={{ scale: 1.15 }}
   whileTap={{
-    scale: 0.8,
-    rotate: -360
+    scale: 0.8
   }}   className={classes.carreau} >
     <div className={classes.content}>
       <h2> Interférents </h2>
@@ -112,10 +109,9 @@ export default function ObtenirTicket(props) {
     <LayersIcon className={classes.icon} fontSize="large"  style={{color:"#f8f8f8",paddingLeft:"5px",width:"60px",height:"60px",backgroundColor:"#004059",borderTopLeftRadius:"50%"}} />
   </motion.div>
 
-  <motion.div whileHover={{ scale: 1.15, rotate: 360 }}
+  <motion.div whileHover={{ scale: 1.15}}
   whileTap={{
-    scale: 0.8,
-    rotate: -360
+    scale: 0.8
   }}  className={classes.carreau} >
   <div className={classes.content}>
     <h2> Opportunités </h2>

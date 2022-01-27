@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import classes from "./speakers.module.css";
 import Navbar from "../../components/navbar/Navbar";
+import Footer from '../../components/footer/Footer';
 import { motion } from "framer-motion";
 import Axios from "axios";
 import Landing from "../../components/landing/Landing";
-import Exposant from "../../components/exposant/Exposant";
 import Speaker from "../../components/speaker/speaker";
+import SpeakerHeader from "../../components/speakerHeader/SpeakerHeader";
 
 export default function Speakers(props) {
   document.body.style = "overflow-y:unset";
@@ -33,8 +34,17 @@ export default function Speakers(props) {
       <div className={classes.first_part}>
         <Navbar />
       </div>
-      <Landing subtitle="NOS EXPOSANT" title="CONSULTER NOS EXPOSANTS" />
-      <Speaker />
+      <SpeakerHeader />
+      <Landing subtitle="NOS SPEAKERS" title="LES SPEAKERS DE LA CONFERENCE" color="#01212E" />
+      {speaker.map((val,key) => {
+            return(
+              <div>
+                 <Speaker id={val.id} image={process.env.PUBLIC_URL + `/speakers/speaker${val.id}.jpg`} name={val.firstname+" "+val.lastname} title={val.title} description={val.description} fb={val.fb} insta={val.insta} linkedin={val.linkedin}  />         
+              </div>
+              
+            );
+          }) }
+          <Footer />
     </motion.div>
   );
 }

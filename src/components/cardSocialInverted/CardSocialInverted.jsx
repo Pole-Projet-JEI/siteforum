@@ -1,0 +1,23 @@
+import React from "react";
+import classes from "./cardSocial.module.css";
+import SocialMedia from "../socialmediaBox/SocialMedia";
+
+export default function CardsocialInverted(props) {
+  return (
+    <div className={classes.card}>
+
+      <div className={classes.aside}>
+        <h1>{props.name}</h1>
+        <h2>{props.title}</h2>
+        <p>{props.description}</p>
+        <SocialMedia title="CONNECT WITH ME" color="#004059" size="28px" />
+      </div>
+      
+      <div className={classes.image}>
+        <img src={props.image} className={classes.image} alt=""></img>
+      </div>
+
+      
+    </div>
+  );
+}

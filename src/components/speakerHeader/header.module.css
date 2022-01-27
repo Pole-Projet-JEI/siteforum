@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('original.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 87vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    opacity: 0.95;
+    
+    
+  }
+  .landing {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .landing h1{
+      text-align: center;
+      color: var(--primary-color);
+      font-size: 60px;
+      margin-bottom: 30px;
+      
+  }
+
+  @media screen and (max-width:630px) {
+    .landing h1 {
+      font-size: 40px;
+    }
+    
+  }
+  
+  @media screen and (max-width:580px) {
+    .landing {
+      font-size: 20px;
+      margin-bottom: 160px;
+    }
+  
+    .header {
+      margin-bottom: -130px;
+    }
+    
+  }
+  

@@ -1,23 +1,17 @@
 import React from "react";
 import Card from "../card/Card";
-import { filieres } from "../../pages/stand/filieres";
 
-export default function Speaker(props) {
+export default function Filiere(props) {
   return (
     <div>
-      <ul>
-        {filieres.map((val, key) => {
-          return (
-            <li key={key}>
+     
+        
               <Card
-                name={val.name}
-                description={val.description}
-                sourceimg={val.sourceimg}
+                name={props.name}
+                description={props.description}
+                image={props.image}
               />
-            </li>
-          );
-        })}
-      </ul>
+    
     </div>
   );
 }

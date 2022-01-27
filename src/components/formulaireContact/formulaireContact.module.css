@@ -86,6 +86,13 @@ textarea {
   resize:vertical;
 }
 
+@media screen and (max-width: 770px) {
+  .feedback {
+    float:unset;
+  }
+  
+}
+
 
 @media screen and (max-width:850px) {
   .form_contact {

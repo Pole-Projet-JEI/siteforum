@@ -19,7 +19,7 @@ export default function SocialMedia(props) {
   }
   return (
     <div className={classes.social_media}>
-      <h3 className={classes.title}>{props.title}</h3>
+      <h3 className={classes.title} style={{color:props.color}} >{props.title}</h3>
       <div className={classes.social_media_box}>
         <FacebookIcon onClick={handleFb} style={{color:props.color,width:props.size,height:props.size}} className={classes.icon}/>
         <InstagramIcon onClick={handleInsta} style={{color:props.color,width:props.size,height:props.size}} className={classes.icon}/>

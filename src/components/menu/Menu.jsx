@@ -15,6 +15,18 @@ const variants = {
   }
 }
 export default function Menu(props) {
+  const changeCursor = () => {
+
+   const cursor = document.querySelector(".cursor");
+   console.log(cursor);
+ /*   document.addEventListener('mousemove', (e) => {
+      cursor.setAttribute('style','left:'+e.pageX + 'px')
+      cursor.setAttribute('style','top:'+e.pageX + 'px')
+    });*/
+    
+   
+  }
+ 
   
   return (
 
@@ -26,12 +38,12 @@ export default function Menu(props) {
         </div>
         <div className={classes.menu_wrapper}>
           <ul className={classes.menu}>
-          <li><Link className={classes.link} to="/">Accueil</Link></li>
+              <li><Link className={classes.link} to="/">Accueil</Link></li>
               <li><Link onClick={props.close} className={classes.link} to="/planning">Planning</Link></li>
               <li><Link onClick={props.close} className={classes.link} to="/stand">Obtenez Votre Stand</Link></li>
               <li><Link onClick={props.close} className={classes.link} to="/speakers">Nos Speakers</Link></li>
               <li><Link onClick={props.close} className={classes.link} to="/faq">FAQ</Link></li>
-
+              <div class="cursor"   ></div>
           </ul>
         </div>
       </motion.div>

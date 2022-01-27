@@ -62,3 +62,18 @@
   color:#00C1C1;
   transition: 0.2s ease-in-out;
 } 
+.cursor {
+  position: fixed;
+  width: 20px ;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.1s;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.link:hover ~ .cursor {
+  transform: scale(6);
+}
