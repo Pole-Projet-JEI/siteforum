@@ -23,6 +23,13 @@
   font-size: 0.8rem;
   font-weight: 600;
 }
+.temp_part {
+  display: flex;
+}
+.temp_part i {
+  color: #A39D9D;
+  margin-right: 10px;
+}
 .title {
   margin-bottom: 10px;
   font-size: 1.5rem;

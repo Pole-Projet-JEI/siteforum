@@ -4,7 +4,7 @@
     position: relative;
     display: grid;
     place-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .slide_track {
@@ -12,9 +12,6 @@
     animation: scroll 40s linear infinite;
 }
 
-.slide_track:hover {
-    animation-play-state: paused ;
-}
 @keyframes scroll {
     0% {
         transform: translateX(0);

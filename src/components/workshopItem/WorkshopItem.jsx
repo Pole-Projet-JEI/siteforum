@@ -26,12 +26,12 @@ export default function WorkshopItem(props) {
 
           <div className={classes.temp}>
             <div className={classes.temp_part}>
-             
+                <i class="fal fa-clock"></i>
                 <h5>{props.time}</h5>
             </div>
             <div className={classes.temp_part}>
          
-
+              <i class="fas fa-map-marker-alt"></i>
               <h5>{props.place}</h5>
             </div>
           </div>
