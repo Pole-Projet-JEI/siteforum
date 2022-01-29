@@ -36,8 +36,12 @@
   
   @media screen and (max-width:580px) {
     .landing {
-      font-size: 20px;
+      
       margin-bottom: 160px;
+    }
+    .landing h1 {
+      font-size: 30px;
+
     }
   
     .header {

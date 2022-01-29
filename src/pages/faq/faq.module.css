@@ -11,13 +11,14 @@
   overflow-x: hidden;
   overflow-y:hidden ;
   background-attachment: fixed;
+  padding-bottom: 50px;
 }
 .box
 {
   display: flex;
   justify-content: space-around;
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:950px) {
   .box{
     flex-direction: column;
   }

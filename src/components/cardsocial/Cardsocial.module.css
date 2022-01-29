@@ -9,7 +9,7 @@
 .image {
   grid-column: span 2;
   height: 100%;
-  float: left;
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,4 +63,49 @@
   font-size: 1rem;
   color: #514D4D;
   text-align: center;
+}
+
+@media screen and (max-width:1250px) {
+  .image {
+    grid-column: span 1;
+  }  
+  .image img {
+    height: 50%;
+  }
+ 
+}
+@media screen and (max-width:850px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .image img {
+    margin-right: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    
+  }
+  .aside h1 {
+    font-size: 3rem;
+  }
+  .aside h2 {
+    font-size: 2rem;
+  }
+  .aside p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .aside h1 {
+    font-size: 2.2rem;
+  }
+  .aside h2 {
+    font-size: 1rem;
+  }
+  .aside p {
+    font-size: 0.8rem;
+  }
+  
 }
