@@ -36,13 +36,14 @@ export default function SpeakerHeader(props) {
           
       },[inView]);
     return (
-    <div ref={ref} className={classes.header}>
+    // <div ref={ref} className={classes.header}>
      
-      <motion.div animate={animation} className={classes.landing}>
-         <h1>THEMATIQUE DU FORUM</h1>
-         <Button content="REGARDER LA VIDEO" />
-      </motion.div>
+    //   <motion.div animate={animation} className={classes.landing}>
+    //      <h1>THEMATIQUE DU FORUM</h1>
+    //      <Button content="REGARDER LA VIDEO" />
+    //   </motion.div>
       
-    </div>
+    // </div>
+    <img src="/hackathon/Hackathon.jpg" className={classes.image} />
   )
 }

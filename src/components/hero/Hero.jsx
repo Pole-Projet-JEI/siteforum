@@ -44,7 +44,7 @@ export default function Hero() {
     <div ref={ref}>
     <motion.div className={classes.hero} animate={animation}>
       <h2 className={classes.subtitle}>
-        Le 24 Novembre 2021, INSAT, Tunis
+        Le 16 Novembre 2022, INSAT, Tunis
       </h2>
       <h1 className={classes.title}>
         FORUM INSAT ENTREPRISE

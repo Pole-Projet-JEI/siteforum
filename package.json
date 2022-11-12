@@ -22,9 +22,12 @@
     "react-countup": "^6.1.0",
     "react-dom": "^17.0.2",
     "react-file-base64": "^1.0.3",
+    "react-icons": "^4.6.0",
     "react-intersection-observer": "^8.33.1",
+    "react-planning": "^1.1.3",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-vertical-timeline-component": "^3.5.2",
     "react-visibility-sensor": "^5.1.1",
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.2"

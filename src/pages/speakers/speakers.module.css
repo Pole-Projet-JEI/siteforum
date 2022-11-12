@@ -11,3 +11,49 @@
   overflow-x: hidden;
   overflow-y: hidden;
 }
+.speakerHeader{
+  height: 100%;
+  width: 100%;
+}
+.hackInfos{
+  align-items: center;
+  padding: 30px;
+  padding-top: 0;
+  
+  
+}
+.descriptionContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.descriptionHack{
+  padding: 40px;
+  border-radius: 20px;
+   margin: 10px;
+    box-shadow: 0px 12px 30px 0px rgba(128, 127, 127, 0.34);
+  font-size: 1rem;
+  color: #01212E;
+  text-align: justify;
+}
+.descriptionTitle{
+  letter-spacing: 5px;
+    word-spacing: 5px;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: #ac0d0d;
+    font-weight: bolder;
+}
+@media (max-width: 600px) {
+  .descriptionContainer{
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .descriptionTitle{
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 1.3rem;
+  }
+}

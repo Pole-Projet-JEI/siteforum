@@ -1,5 +1,5 @@
 .slider {
-    height: 350px;
+    
     margin: auto;
     position: relative;
     display: grid;
@@ -9,9 +9,12 @@
 
 .slide_track {
     display: flex;
-    animation: scroll 40s linear infinite;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    /* animation: scroll 40s linear infinite; */
 }
-
+/* 
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -20,7 +23,7 @@
         transform: translateX(calc(-250px * 6));
     }
     
-}
+} */
 
 .slide {
     height: 350px;
@@ -28,7 +31,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
     justify-content: space-between;
 }
 .slide h2 {
@@ -40,4 +42,9 @@
 .slide h4 {
     font-weight: 500;
     color: #514D4D;
+}
+@media (max-width: 500px) {
+.slide_track{
+    flex-direction: column;
+}
 }

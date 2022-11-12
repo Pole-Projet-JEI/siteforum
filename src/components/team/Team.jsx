@@ -23,27 +23,61 @@ export default function Team() {
     
     },[]);
     
+    const data=[
+      {
+        
+        firstname:"Oussema",
+        lastname:"Achour",
+        title:"Responsable Workshops",
+        photo:"/organisateur/Achour.jpg",
+        description:"",
+      },
+      {
+        
+        firstname:"Anas",
+        lastname:"Chaibi",
+        title:"Responsable Hackathon",
+        photo:"/organisateur/Anas.png",
+        description:"",
+      },
+      {
+       
+        firstname:"Feriel",
+        lastname:"Bouhamed",
+        title:"Responsable Logistique",
+        photo:"/organisateur/Feriel.jpg",
+        description:"",
+      },
+      {
+        
+        firstname:"Sandra",
+        lastname:"Mourali",
+        title:"Responsable MediaOff",
+        photo:"/organisateur/Sandra.jpg",
+        description:"",
+      }
+    ]
     return (
         <div className={classes.slider}>
-            <div className={classes.slide_track} style={{ width: `calc(300px * ${organisateur.length} ); `}}>
-            {organisateur.map((val,key) => {
+            <div className={classes.slide_track} >
+            {data.map((val,key) => {
             return(
                 <div className={classes.slide} >
-                    <ProfilOrganisateur fb={val.fb} insta={val.insta} linkedin={val.linkedin} name={val.firstname+" "+val.lastname} title={val.title} photo={process.env.PUBLIC_URL + `/organisateur/organisateur${val.id}.jpg`} description={val.description}/>
-                    <h2>{val.firstname+""+val.lastname}</h2>
+                    <ProfilOrganisateur   name={val.firstname+" "+val.lastname} title={val.title} photo={val.photo} description={val.description}/>
+                    <h3>{val.firstname+" "+val.lastname}</h3>
                     <h4>{val.title}</h4>
                 </div>
             );
           })}
-          {organisateur.map((val,key) => {
+          {/* {organisateur.map((val,key) => {
             return(
                 <div className={classes.slide} >
                     <ProfilOrganisateur fb={val.fb} insta={val.insta} linkedin={val.linkedin} name={val.firstname+" "+val.lastname} title={val.title} photo={process.env.PUBLIC_URL + `/organisateur/organisateur${val.id}.jpg`} description={val.description}/>
-                    <h2>{val.firstname+""+val.lastname}</h2>
+                    <h2>{val.firstname+"aaaaaaaaaa"+val.lastname}</h2>
                     <h4>{val.title}</h4>
                 </div>
             );
-          })}
+          })} */}
 
             </div>
         

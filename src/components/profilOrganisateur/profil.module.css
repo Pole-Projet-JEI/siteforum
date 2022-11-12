@@ -11,7 +11,8 @@
   transition: 1s ease-in-out;
   overflow-y: hidden;
   overflow-x: hidden;
- 
+ position: relative;
+ text-align: center;
 
 }
 .img {
