@@ -6,7 +6,7 @@ import { useState , useEffect} from 'react';
 import Axios from 'axios';
 
 
-export default function Team() {
+export default function Team(props) {
     
     const [organisateur,setOrganisateur] = useState([]);
     useEffect(() => {
@@ -23,44 +23,44 @@ export default function Team() {
     
     },[]);
     
-    const data=[
-      {
+    // const data=[
+    //   {
         
-        firstname:"Oussema",
-        lastname:"Achour",
-        title:"Responsable Workshops",
-        photo:"/organisateur/Achour.jpg",
-        description:"",
-      },
-      {
+    //     firstname:"Oussema",
+    //     lastname:"Achour",
+    //     title:"Responsable Workshops",
+    //     photo:"/organisateur/Achour.jpg",
+    //     description:"",
+    //   },
+    //   {
         
-        firstname:"Anas",
-        lastname:"Chaibi",
-        title:"Responsable Hackathon",
-        photo:"/organisateur/Anas.png",
-        description:"",
-      },
-      {
+    //     firstname:"Anas",
+    //     lastname:"Chaibi",
+    //     title:"Responsable Hackathon",
+    //     photo:"/organisateur/Anas.png",
+    //     description:"",
+    //   },
+    //   {
        
-        firstname:"Feriel",
-        lastname:"Bouhamed",
-        title:"Responsable Logistique",
-        photo:"/organisateur/Feriel.jpg",
-        description:"",
-      },
-      {
+    //     firstname:"Feriel",
+    //     lastname:"Bouhamed",
+    //     title:"Responsable Logistique",
+    //     photo:"/organisateur/Feriel.jpg",
+    //     description:"",
+    //   },
+    //   {
         
-        firstname:"Sandra",
-        lastname:"Mourali",
-        title:"Responsable MediaOff",
-        photo:"/organisateur/Sandra.jpg",
-        description:"",
-      }
-    ]
+    //     firstname:"Sandra",
+    //     lastname:"Mourali",
+    //     title:"Responsable MediaOff",
+    //     photo:"/organisateur/Sandra.jpg",
+    //     description:"",
+    //   }
+    // ]
     return (
         <div className={classes.slider}>
             <div className={classes.slide_track} >
-            {data.map((val,key) => {
+            {props.data.map((val,key) => {
             return(
                 <div className={classes.slide} >
                     <ProfilOrganisateur   name={val.firstname+" "+val.lastname} title={val.title} photo={val.photo} description={val.description}/>

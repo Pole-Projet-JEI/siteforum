@@ -7,6 +7,10 @@ import Workshops from '../../components/workshops/Workshops';
 import Footer from '../../components/footer/Footer';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { instructors } from './instructors';
+import Team from '../../components/team/Team';
+import Landing from '../../components/landing/Landing';
+import PlanningWorkshops from '../../components/planningWorkshops/planningWorkshops';
 
 export default function Planning(props) {
 
@@ -27,13 +31,18 @@ export default function Planning(props) {
       <Header subtitle="JOUR J" title="PLANNING DU JOUR" color="#fff"/>
       <div className={classes.workshops_container}>
         <div  className={classes.intro}>
-            <h2 className={classes.date}>Le 24 Novembre 2021</h2>
+            <h2 className={classes.date}>Le 16 Novembre 2022</h2>
            
             {isToggled ? <Button content="Présentiel" onClick={ () => setIsToggled(!isToggled) } /> : <Button content="En Ligne" onClick={ () => setIsToggled(!isToggled) } />  }
            
         </div>
-        { isToggled ? <Workshops type="en ligne" /> : <Workshops type="présentiel" /> }
+        {/* { isToggled ? <Workshops type="en ligne" /> : <Workshops type="présentiel" /> } */}
+
+        { isToggled ? <PlanningWorkshops type="en ligne" data={instructors} /> : <PlanningWorkshops type="présentiel" data={instructors} /> }
+
       </div>
+      <Landing  title="Nos Formatteurs" color="#004059" lineColor="" />
+      <Team data={instructors} />
       <Footer />
       
     </motion.div>

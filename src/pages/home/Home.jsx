@@ -12,6 +12,7 @@ import FormulaireContact from '../../components/formulaireContact/FormulaireCont
 import { motion } from 'framer-motion';
 import Team from '../../components/team/Team';
 import JoinUs from '../../components/joinus/joinus';
+import { ocData } from './ocData';
 
 function Home(props) {
   
@@ -38,7 +39,7 @@ function Home(props) {
         <Landing subtitle="NOS EXPOSANTS" title="LES EXPOSANT DU FORUM" color="#004059"/>
         <Exposant />
         <Landing subtitle="NOTRE ÉQUIPE" title="NOTRE COMITÉ D'ORGANISATION" color="#004059"/>
-        <Team />
+        <Team data={ocData} />
         <FormulaireContact />
         <div>
         <JoinUs />
