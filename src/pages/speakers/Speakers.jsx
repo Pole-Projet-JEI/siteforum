@@ -8,6 +8,8 @@ import Landing from "../../components/landing/Landing";
 import Speaker from "../../components/speaker/speaker";
 import SpeakerHeader from "../../components/speakerHeader/SpeakerHeader";
 import PlanningHackathon from "../../components/planningHackathon/planningHackathon";
+import { workshopsInstructors } from "./SpeakersData";
+import Team from "../../components/team/Team";
 
 export default function Speakers(props) {
   document.body.style = "overflow-y:unset";
@@ -77,6 +79,8 @@ export default function Speakers(props) {
         </div>
       </div>
       <PlanningHackathon />
+      <Landing  title="Nos Formatteurs" color="#ac0d0d" lineColor="" />
+      <Team data={workshopsInstructors} />
       <Footer />
     </motion.div>
   );

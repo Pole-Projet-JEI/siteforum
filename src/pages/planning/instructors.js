@@ -32,6 +32,29 @@ export const instructors=[
       workshop:"Work-life balance",
       lieuEtDate:"Orange Space at INSAT 11:30 --> 13:00",
       citation:"Your life balance starts from your inner balance"
-    }
+    },
+    {
+      
+      firstname:"Yasmine",
+      lastname:"Aisaa",
+      title:`A Business intelligence and Marketing intelligence specialist`,
+      photo:"/formateur/yasmineAissa.png",
+      description:"A healthy work-life balance gives us the opportunity to thrive at work and take care of our personal well-being outside the office and handle the stress. Join us and discover how!",
+      workshop:"Self Branding",
+      lieuEtDate:"Orange Space at INSAT 14:00 --> 15:30",
+      citation:"Personal branding is the process of creating your brand identity, whether for yourself or for your business."
+    },
+    {
+      
+      firstname:"Fatma",
+      lastname:"Marzouki",
+      title:`A recruiter and a cultural studies researcher. I search for potential and hire great talents`,
+      photo:"/formateur/fatmamarzouki.jpg",
+      description:"A healthy work-life balance gives us the opportunity to thrive at work and take care of our personal well-being outside the office and handle the stress. Join us and discover how!",
+      workshop:"CV correction",
+      lieuEtDate:"",
+      citation:""
+    },
+    
     
   ]

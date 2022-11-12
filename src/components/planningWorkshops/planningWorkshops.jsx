@@ -79,13 +79,33 @@ export default function PlanningWorkshops(props) {
           contentArrowStyle={{
             borderRight: "7px solid  #21c3c330",
           }}
+          date="Samsung Space at INSAT"
+          dateClassName={classes.date}
+          iconStyle={{ background: "#fff", color: "#004059" }}
+          icon={<FaMicrophone />}
+        >
+          <div className={classes.timeLineElementContainer}>
+            <h3 className={classes.verticalTimelineElementTitle}>Interview Simulation</h3>
+            <h4 className={classes.verticalTimelineElementSubtitle}>
+              Telnet
+            </h4>
+          </div>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{
+            background: "#21c3c330",
+          }}
+          contentArrowStyle={{
+            borderRight: "7px solid  #21c3c330",
+          }}
           date="14h00"
           dateClassName={classes.date}
           iconStyle={{ background: "#fff", color: "#004059" }}
           icon={<FaMicrophone />}
         >
           <div className={classes.timeLineElementContainer}>
-            <h3 className={classes.verticalTimelineElementTitle}>Pitching</h3>
+            <h3 className={classes.verticalTimelineElementTitle}>Pitching Hackathon</h3>
           </div>
         </VerticalTimelineElement>
 

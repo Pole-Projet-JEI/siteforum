@@ -14,36 +14,11 @@ import {
   FaMicroscope,
   FaStar,
   FaBusinessTime,
+  FaBahai,
 } from "react-icons/fa";
 
 export default function PlanningHackathon() {
-  const data = [
-    {
-      date: "Friday 21h00",
-      title: "Ouverture",
-      instructor: "",
-    },
-    {
-      date: "Sunday 10h00",
-      title: "Workshop BMC",
-      instructor: "Mr Jalel Ben Romdhane",
-    },
-    {
-      date: "Sunday 17h00",
-      title: "Workshop UI/UX",
-      instructor: "Mr Anas Tradi",
-    },
-    {
-      date: "Wednesday Morning",
-      title: "Workshop Pitching (in person)",
-      instructor: "Mrs Asma selmi",
-    },
-    {
-      date: "Wednesday 14h00",
-      title: "Pitching",
-      instructor: "",
-    },
-  ];
+  
   return (
     <div className={classes.container}>
       <Landing
@@ -90,8 +65,7 @@ export default function PlanningHackathon() {
               Mr Jalel Ben Romdhane
             </h4>
             <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading
+            The Business Model Canvas is one of the best known and most used tools to help entrepreneurs turn an idea into an organised strategy and a feasible business plan, using real data to get you closer to your goals.
             </p>
           </div>
         </VerticalTimelineElement>
@@ -116,8 +90,7 @@ export default function PlanningHackathon() {
               Mr Anas Tradi
             </h4>
             <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading
+            Nowadays, we constantly hear about UI/UX design, which has become the key to a well-designed and developed website.UI/UX is important because it provides your users with easy navigation and engaging content, which helps to increase consumer satisfaction.
             </p>
           </div>
         </VerticalTimelineElement>
@@ -142,8 +115,7 @@ export default function PlanningHackathon() {
               Mrs Asma selmi
             </h4>
             <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading
+            Pitching plays a crucial role in the business world, whether it is selling an idea or seeking additional funding, attracting excellent co-founders or recruiting the best employees.
             </p>
           </div>
         </VerticalTimelineElement>
@@ -164,7 +136,24 @@ export default function PlanningHackathon() {
             <h3 className={classes.verticalTimelineElementTitle}>Pitching</h3>
           </div>
         </VerticalTimelineElement>
-
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{
+            background: "rgba(255, 4, 4, 0.116)",
+          }}
+          contentArrowStyle={{
+            borderRight: "7px solid  rgba(255, 4, 4, 0.116)",
+          }}
+          date="Wednesday 14h00"
+          dateClassName={classes.date}
+          iconStyle={{ background: "#fff", color: "#ac0d0d" }}
+          icon={<FaBahai />}
+        >
+          <div className={classes.timeLineElementContainer}>
+            <h3 className={classes.verticalTimelineElementTitle}>Announcement of winners</h3>
+          </div>
+        </VerticalTimelineElement>
+        
         <VerticalTimelineElement
           iconStyle={{ background: "#fff", color: "#ac0d0d" }}
           icon={<FaCheck />}
