@@ -48,12 +48,12 @@ export const instructors=[
       
       firstname:"Fatma",
       lastname:"Marzouki",
-      title:`A recruiter and a cultural studies researcher. I search for potential and hire great talents`,
+      title:`Recruteuse et Chercheuse en études culturelles.`,
       photo:"/formateur/fatmamarzouki.jpg",
       description:"A healthy work-life balance gives us the opportunity to thrive at work and take care of our personal well-being outside the office and handle the stress. Join us and discover how!",
-      workshop:"CV correction",
+      workshop:"Improve your CV",
       lieuEtDate:"",
-      citation:""
+      citation:"Un CV bien rédigé peut faire la différence entre décrocher ou non l'entretien pour le job idéal. Savoir quoi écrire et comment l'écrire est donc crucial pour votre réussite."
     },
     {
       
