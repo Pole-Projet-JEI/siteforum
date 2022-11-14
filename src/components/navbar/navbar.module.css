@@ -37,9 +37,11 @@
 .logo {
   position: relative;
   width: 280px;
+  height: 68px; 
+}
+.logoJei{
   height: 68px;
- 
-
+  width: 110px;
 }
 .links {
   list-style: none;
@@ -95,6 +97,10 @@
    
   
   }
+  .logoJei{
+    height: 58px;
+    width: 60px;
+  }
   .navbar {
     padding: 10px;
   }
@@ -122,6 +128,10 @@
     
    
   
+  }
+  .logoJei{
+    height: 40px;
+    width: 50px;
   }
   
 }

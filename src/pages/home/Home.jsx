@@ -35,7 +35,7 @@ function Home(props) {
         <WhoAreWe />
         <ObtenirTicket />
       
-        <Counter first={{number:30,title:"Entreprises"}} second={{number:10,title:"Speakers"}} third={{number:2000,title:"Présents au Forum"}} fourth={{number:8,title:"Workshop Offerts"}} />
+        <Counter first={{number:30,title:"Entreprises"}} second={{number:35,title:"Participants au Hackathon"}} third={{number:2000,title:"Présents au Forum"}} fourth={{number:8,title:"Workshop Offerts"}} />
         <Landing subtitle="NOS EXPOSANTS" title="LES EXPOSANT DU FORUM" color="#004059"/>
         <Exposant />
         <Landing subtitle="NOTRE ÉQUIPE" title="NOTRE COMITÉ D'ORGANISATION" color="#004059"/>

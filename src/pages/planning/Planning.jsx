@@ -11,6 +11,7 @@ import { instructors } from './instructors';
 import Team from '../../components/team/Team';
 import Landing from '../../components/landing/Landing';
 import PlanningWorkshops from '../../components/planningWorkshops/planningWorkshops';
+import InstructorsTeam from '../../components/instructorsTeam/instructorsTeam';
 
 export default function Planning(props) {
 
@@ -33,16 +34,17 @@ export default function Planning(props) {
         <div  className={classes.intro}>
             <h2 className={classes.date}>Le 16 Novembre 2022</h2>
            
-            {isToggled ? <Button content="Présentiel" onClick={ () => setIsToggled(!isToggled) } /> : <Button content="En Ligne" onClick={ () => setIsToggled(!isToggled) } />  }
-           
+            {/* {isToggled ? <Button content="Présentiel" onClick={ () => setIsToggled(!isToggled) } /> : <Button content="En Ligne" onClick={ () => setIsToggled(!isToggled) } />  }
+            */}
         </div>
         {/* { isToggled ? <Workshops type="en ligne" /> : <Workshops type="présentiel" /> } */}
 
         { isToggled ? <PlanningWorkshops type="en ligne" data={instructors} /> : <PlanningWorkshops type="présentiel" data={instructors} /> }
 
       </div>
-      <Landing  title="Nos Formatteurs" color="#004059" lineColor="" />
-      <Team data={instructors} />
+      <Landing  title="Nos Formateurs" color="#004059" lineColor="" />
+      <InstructorsTeam data={instructors} />
+      {/* <Team data={instructors} /> */}
       <Footer />
       
     </motion.div>

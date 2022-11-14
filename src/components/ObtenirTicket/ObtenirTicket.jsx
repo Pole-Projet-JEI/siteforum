@@ -30,7 +30,7 @@ export default function ObtenirTicket(props) {
       });
     }
     if(!inView) {
-      animation.start({x: '-100vw',
+      animation.start({x: '0vw',
       transition: {
         type: 'spring' , duration: 1,bounce: 0
       }
@@ -52,7 +52,7 @@ export default function ObtenirTicket(props) {
     une conférence des plus intéressante. Inscrivez-vous maintenant et
     faites décoller votre carrière professionnelle.
   </p>
-  <Button content="OBTENEZ VOTRE TICKET" hover="#F9138F" color="#004059"/>
+  <Button content="OBTENEZ VOTRE TICKET" hover="#F9138F" color="#004059" link="planning"/>
 </div>
 
 <div className={classes.card}  >

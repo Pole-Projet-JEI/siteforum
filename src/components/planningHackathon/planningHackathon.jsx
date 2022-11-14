@@ -23,21 +23,21 @@ export default function PlanningHackathon() {
     <div className={classes.container}>
       <Landing
         title="The Forum's Hackathon program "
-        color="#7e0e0e"
+        color="#0e920a"
         lineColor=""
       />
-      <VerticalTimeline lineColor="#ac0d0d">
+      <VerticalTimeline lineColor="#0e920a">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: "rgba(255, 4, 4, 0.116)",
+            background: "#36c13148",
           }}
           contentArrowStyle={{
-            borderRight: "7px solid  rgba(255, 4, 4, 0.116)",
+            borderRight: "7px solid  #36c13148",
           }}
           date="Friday - 21h00"
           dateClassName={classes.date}
-          iconStyle={{ background: "#fff", color: "#ac0d0d" }}
+          iconStyle={{ background: "#fff", color: "#0e920a" }}
           icon={<FaGrinStars />}
         >
           <div className={classes.timeLineElementContainer}>
@@ -47,14 +47,14 @@ export default function PlanningHackathon() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: "rgba(255, 4, 4, 0.116)",
+            background: "#36c13148",
           }}
           contentArrowStyle={{
-            borderRight: "7px solid  rgba(255, 4, 4, 0.116)",
+            borderRight: "7px solid  #36c13148",
           }}
           date="Friday - 21h00"
           dateClassName={classes.date}
-          iconStyle={{ background: "#fff", color: "#ac0d0d" }}
+          iconStyle={{ background: "#fff", color: "#0e920a" }}
           icon={<FaBusinessTime />}
         >
           <div className={classes.timeLineElementContainer}>
@@ -72,14 +72,14 @@ export default function PlanningHackathon() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: "rgba(255, 4, 4, 0.116)",
+            background: "#36c13148",
           }}
           contentArrowStyle={{
-            borderRight: "7px solid  rgba(255, 4, 4, 0.116)",
+            borderRight: "7px solid  #36c13148",
           }}
           date="Friday - 21h00"
           dateClassName={classes.date}
-          iconStyle={{ background: "#fff", color: "#ac0d0d" }}
+          iconStyle={{ background: "#fff", color: "#0e920a" }}
           icon={<FaStar />}
         >
           <div className={classes.timeLineElementContainer}>
@@ -97,14 +97,14 @@ export default function PlanningHackathon() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: "rgba(255, 4, 4, 0.116)",
+            background: "#36c13148",
           }}
           contentArrowStyle={{
-            borderRight: "7px solid  rgba(255, 4, 4, 0.116)",
+            borderRight: "7px solid  #36c13148",
           }}
           date="Wednesday Morning"
           dateClassName={classes.date}
-          iconStyle={{ background: "#fff", color: "#ac0d0d" }}
+          iconStyle={{ background: "#fff", color: "#0e920a" }}
           icon={<FaMicroscope />}
         >
           <div className={classes.timeLineElementContainer}>
@@ -122,14 +122,14 @@ export default function PlanningHackathon() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: "rgba(255, 4, 4, 0.116)",
+            background: "#36c13148",
           }}
           contentArrowStyle={{
-            borderRight: "7px solid  rgba(255, 4, 4, 0.116)",
+            borderRight: "7px solid  #36c13148",
           }}
           date="Wednesday 14h00"
           dateClassName={classes.date}
-          iconStyle={{ background: "#fff", color: "#ac0d0d" }}
+          iconStyle={{ background: "#fff", color: "#0e920a" }}
           icon={<FaMicrophone />}
         >
           <div className={classes.timeLineElementContainer}>
@@ -139,14 +139,14 @@ export default function PlanningHackathon() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: "rgba(255, 4, 4, 0.116)",
+            background: "#36c13148",
           }}
           contentArrowStyle={{
-            borderRight: "7px solid  rgba(255, 4, 4, 0.116)",
+            borderRight: "7px solid  #36c13148",
           }}
           date="Wednesday 14h00"
           dateClassName={classes.date}
-          iconStyle={{ background: "#fff", color: "#ac0d0d" }}
+          iconStyle={{ background: "#fff", color: "#0e920a" }}
           icon={<FaBahai />}
         >
           <div className={classes.timeLineElementContainer}>
@@ -155,7 +155,7 @@ export default function PlanningHackathon() {
         </VerticalTimelineElement>
         
         <VerticalTimelineElement
-          iconStyle={{ background: "#fff", color: "#ac0d0d" }}
+          iconStyle={{ background: "#fff", color: "#0e920a" }}
           icon={<FaCheck />}
         />
       </VerticalTimeline>

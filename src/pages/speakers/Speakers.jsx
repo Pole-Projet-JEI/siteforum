@@ -43,8 +43,8 @@ export default function Speakers(props) {
       <Landing
         subtitle="FORUM'S HACKATHON"
         title="HACK FOR GOOD"
-        color="#7e0e0e"
-        lineColor="#ac0d0d"
+        color="#0e920a"
+        lineColor="#0e920a"
       />
       {/* {speaker.map((val,key) => {
             return(
@@ -79,7 +79,7 @@ export default function Speakers(props) {
         </div>
       </div>
       <PlanningHackathon />
-      <Landing  title="Nos Formatteurs" color="#ac0d0d" lineColor="" />
+      <Landing  title="Nos Formateurs" color="#ac0d0d" lineColor="" />
       <Team data={workshopsInstructors} />
       <Footer />
     </motion.div>

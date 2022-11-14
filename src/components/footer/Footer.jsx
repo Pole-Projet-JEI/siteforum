@@ -51,7 +51,7 @@ export default function Footer() {
         <hr />
         <p>
           <CopyrightIcon className={classes.icon2} />
-          2021, Junior Entreprise INSAT, Tous les droits sont réservés
+          2022, Junior Entreprise INSAT, Tous les droits sont réservés
         </p>
       </div>
     </div>
