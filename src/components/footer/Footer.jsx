@@ -1,6 +1,7 @@
 import SocialMedia from "../socialmediaBox/SocialMedia";
+import ScrollIntoView from 'react-scroll-into-view'
 import classes from "./footer.module.css";
-import logo from "./jeilogo.png";
+import logo from "./logoJuniorei.png";
 import EmailIcon from "@mui/icons-material/Email";
 import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
@@ -18,16 +19,19 @@ export default function Footer() {
           <h2 className={classes.titre}>INFORMATIONS</h2>
           <div>
             <p>
-              <EmailIcon className={classes.icon} />
-              <a className={classes.link} href="/home">
+            <ScrollIntoView smooth="true" selector="#formContact">
+            <EmailIcon className={classes.icon} />
+              <a className={classes.link} href="/#formContact">
                 Contact
               </a>
+                </ScrollIntoView>
+              
             </p>
           </div>
           <div>
             <p>
               <ConfirmationNumberIcon className={classes.icon} />
-              <a className={classes.link} href="/planning">
+              <a className={classes.link} href="https://www.eventbrite.com/cc/forum-insat-entreprise-workshops-1381869?fbclid=IwAR2F8TxJC7nN-bGqhJVJb95N2w555NdGdInSds7URauoXfXX0wYGbqh4iuA" target="_blank" >
                 Ticket
               </a>
             </p>
