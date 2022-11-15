@@ -4,7 +4,7 @@ export const instructors=[
       
       firstname:"Ayssar",
       lastname:"Al Shihabi",
-      title:"Social media Manager, Online Business Consultant, Career Development Solutions, Podcaster, Founder of Union legacy consulting",
+      title:"Social media Manager, Online Business Consultant, Founder of Union legacy consulting",
       photo:"/formateur/AyssarAlShihabi.png",
       description:"Choosing a career is a lifelong process of self-exploration, learning, and decision-making that brings you closer to your ideal job, skills and lifestyle.",
       workshop:"Career Development",
@@ -15,7 +15,7 @@ export const instructors=[
      
       firstname:"Aymen",
       lastname:"Ben Othmen",
-      title:"Coach-consultant en développement, Master Coach en techniques de Leadership, Motivational Speaker",
+      title:"Coach-consultant en développement, Master Coach en techniques de Leadership",
       photo:"/formateur/AymenBenOthmane.png",
       description:"Community leadership is about developing and sustaining local innovations that improve the quality of life of community members through active engagement in shared goals and visions.",
       workshop:"Community Leadership",
