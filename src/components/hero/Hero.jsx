@@ -2,7 +2,7 @@ import React  from 'react';
 import classes from './hero.module.css';
 import Button from '../../components/button/Button';
 import Timer from '../timer/Timer';
-import jeilogo from '../footer/logoJuniorei.png';
+import jeilogo from '../footer/logoJei2.png';
 import insatlogo from './insat.png';
 import hybride from './hybride.png';
 import { motion } from "framer-motion";
@@ -56,7 +56,7 @@ export default function Hero() {
           <div className={classes.btn}>
             <Button  content="OBTENEZ VOTRE TICKET" padding="120px" hover="#F9138F" link="https://www.eventbrite.com/cc/forum-insat-entreprise-workshops-1381869?fbclid=IwAR2F8TxJC7nN-bGqhJVJb95N2w555NdGdInSds7URauoXfXX0wYGbqh4iuA"  />
           </div>
-          <div className={classes.img}>
+          <div className={classes.imgJ}>
             <img src={jeilogo} alt="p1" />
           </div>
 
@@ -67,7 +67,7 @@ export default function Hero() {
           <div className={classes.btn}>
             <Button content="OBTENEZ VOTRE STAND"  padding="120px" link="stand"/>
           </div>
-          <div className={classes.img}>
+          <div className={classes.imgI}>
             <img src={insatlogo} alt="p2" />
           </div>
 
