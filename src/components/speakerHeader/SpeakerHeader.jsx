@@ -44,6 +44,6 @@ export default function SpeakerHeader(props) {
     //   </motion.div>
       
     // </div>
-    <img src="/hackathon/Hackathon.jpg" className={classes.image} />
+    <img src="/hackathon/hackathon2023.jpg" className={classes.image} />
   )
 }

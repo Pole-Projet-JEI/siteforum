@@ -9,7 +9,7 @@ const JoinUs = () => {
                 <h1>Rejoignez-Nous</h1>
                 <p>Institut National Des Sciences <br />Appliquées et de Technologie.<br /> 676 INSAT Centre Urbain Nord BP <br /> Tunis Cedex 1080.</p>
                 <h2>Contactez nous !</h2>
-                <p><span>Présidente :</span> Rana Moussaoui <br />Téléphone : +216 21 538 288 <br /><span>Responsable Dév.Commercial : </span> Aziz Slama  <br />Téléphone : +216 24 065 377 <br />Email:  <span>forum.jeinsat@gmail.com </span></p>
+                <p><span>Président :</span> Mohamed Amine Hamdi <br />Téléphone : +216 53 466 384 <br /><span>Responsable Dév.Commercial : </span> Mohamed Amine Gdoura  <br />Téléphone : +216 95 117 099 <br />Email:  <span>forum.jeinsat@gmail.com </span></p>
             </div>
             <div className={classes.map}>
                <GoogleMaps />

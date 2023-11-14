@@ -14,16 +14,16 @@ import Team from "../../components/team/Team";
 export default function Speakers(props) {
   document.body.style = "overflow-y:unset";
 
-  const [speaker, setSpeaker] = useState([]);
-  useEffect(() => {
-    Axios.get("http://localhost:5000/speakers/")
-      .then((response) => {
-        setSpeaker(response.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
+  // const [speaker, setSpeaker] = useState([]);
+  // useEffect(() => {
+  //   Axios.get("http://localhost:5000/speakers/")
+  //     .then((response) => {
+  //       setSpeaker(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     });
+  // }, []);
 
   return (
     <motion.div
@@ -46,26 +46,18 @@ export default function Speakers(props) {
         color="#0e920a"
         lineColor="#0e920a"
       />
-      {/* {speaker.map((val,key) => {
-            return(
-              <div>
-                 <Speaker id={val.id} image={process.env.PUBLIC_URL + `/speakers/speaker${val.id}.jpg`} name={val.firstname+" "+val.lastname} title={val.title} description={val.description} fb={val.fb} insta={val.insta} linkedin={val.linkedin}  />         
-              </div>
-              
-            );
-          }) } */}
       <div className={classes.hackInfos}>
+        <div className={classes.descriptionHack}>
+          <div className={classes.descriptionTitle}>Forum's Hackathon</div>
+          <p>
+            Une compétition de 4 jours pendant laquelle les participants vont
+            développer un projet sous la thématique de la Responsabilité
+            Sociétale des Entreprises (RSE) en lien avec Health Care Durant cette compétition il y'aura
+            une variété de formations et un pitching qui aura lieu le mercredi
+            16 novembre 2022 à l'auditorium géant de l'INSAT
+          </p>
+        </div>
         <div className={classes.descriptionContainer}>
-          <div className={classes.descriptionHack}>
-            <div className={classes.descriptionTitle}>Forum's Hackathon</div>
-            <p>
-              Une compétition de 4 jours pendant laquelle les participants vont
-              développer un projet sous la thématique de la Responsabilité
-              Sociétale des Entreprises (RSE) Durant cette compétition il y'aura
-              une variété de formations et un pitching qui aura lieu le mercredi
-              16 novembre 2022 à l'auditorium géant de l'INSAT
-            </p>
-          </div>
           <div className={classes.descriptionHack}>
             <div className={classes.descriptionTitle}>RSE</div>
             <p>
@@ -74,6 +66,15 @@ export default function Speakers(props) {
               le but de respecter les principes du développement durable,
               c’est-àdire être économiquement viable, avoir un impact positif
               sur la société mais aussi mieux respecter l’environnement.
+            </p>
+          </div>
+          <div className={classes.descriptionHack}>
+            <div className={classes.descriptionTitle}>Health Care</div>
+            <p>
+              Les soins de santé sont des services destinés à préserver, rétablir
+              ou améliorer la santé physique et mentale. Cela englobe la prévention,
+              le diagnostic, le traitement et les soins à long terme. Le domaine inclut
+              également la promotion de la santé et la gestion des maladies.
             </p>
           </div>
         </div>

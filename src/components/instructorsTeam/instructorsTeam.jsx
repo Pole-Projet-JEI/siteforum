@@ -11,16 +11,16 @@ export default function InstructorsTeam(props) {
       opacity: 0.8,
     },
   };
-  const [organisateur, setOrganisateur] = useState([]);
-  useEffect(() => {
-    Axios.get("http://localhost:5000/organisateur/")
-      .then((response) => {
-        setOrganisateur(response.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
+  // const [organisateur, setOrganisateur] = useState([]);
+  // useEffect(() => {
+  //   Axios.get("http://localhost:5000/organisateur/")
+  //     .then((response) => {
+  //       setOrganisateur(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     });
+  // }, []);
 
   // const data=[
   //   {

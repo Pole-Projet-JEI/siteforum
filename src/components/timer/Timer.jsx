@@ -15,7 +15,7 @@ export default function Timer() {
   let interval=useRef();
   const startTimer=()=>{
 
-      const countDownDate= new Date("November 16, 2022 08:00:00")
+      const countDownDate= new Date("November 15, 2023 09:00:00")
       interval= setInterval(()=>{
 
           const now=new Date().getTime();

@@ -39,12 +39,12 @@ export default function Hero() {
     })
     }
       
-  },[inView]);
+  },[inView, animation]);
   return (
     <div ref={ref}>
     <motion.div className={classes.hero} animate={animation}>
       <h2 className={classes.subtitle}>
-        Le 16 Novembre 2022, INSAT, Tunis
+        Le 15 Novembre 2023, INSAT, Tunis
       </h2>
       <h1 className={classes.title}>
         FORUM INSAT ENTREPRISE
@@ -54,7 +54,7 @@ export default function Hero() {
 
         <div className={classes.section}>
           <div className={classes.btn}>
-            <Button  content="OBTENEZ VOTRE TICKET" padding="120px" hover="#F9138F" link="https://www.eventbrite.com/cc/forum-insat-entreprise-workshops-1381869?fbclid=IwAR2F8TxJC7nN-bGqhJVJb95N2w555NdGdInSds7URauoXfXX0wYGbqh4iuA"  />
+            <Button  content="OBTENEZ VOTRE TICKET" padding="120px" hover="#F9138F" link="https://fabskill.com/fr/event/22?fbclid=IwAR0UmDAXnBS7AJxcOnAayMbaqYZyuU0pJOgralx9yYdy-OlgJg_fl-qHdQ4"  />
           </div>
           <div className={classes.imgJ}>
             <img src={jeilogo} alt="p1" />
@@ -70,12 +70,7 @@ export default function Hero() {
           <div className={classes.imgI}>
             <img src={insatlogo} alt="p2" />
           </div>
-
         </div>
-       
-        
-        
-        
       </div>
       
         <div className={classes.second}>

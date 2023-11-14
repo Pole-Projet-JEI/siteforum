@@ -18,20 +18,19 @@ export default function Footer() {
         <div className={classes.footerelement}>
           <h2 className={classes.titre}>INFORMATIONS</h2>
           <div>
-            <p>
             <ScrollIntoView smooth="true" selector="#formContact">
-            <EmailIcon className={classes.icon} />
-              <a className={classes.link} href="/#formContact">
-                Contact
-              </a>
-                </ScrollIntoView>
-              
-            </p>
+              <p>
+                <EmailIcon className={classes.icon} />
+                <a className={classes.link} href="/#formContact">
+                  Contact
+                </a>
+              </p>
+            </ScrollIntoView>
           </div>
           <div>
             <p>
               <ConfirmationNumberIcon className={classes.icon} />
-              <a className={classes.link} href="https://www.eventbrite.com/cc/forum-insat-entreprise-workshops-1381869?fbclid=IwAR2F8TxJC7nN-bGqhJVJb95N2w555NdGdInSds7URauoXfXX0wYGbqh4iuA" target="_blank" >
+              <a className={classes.link} href="https://fabskill.com/fr/event/22?fbclid=IwAR0UmDAXnBS7AJxcOnAayMbaqYZyuU0pJOgralx9yYdy-OlgJg_fl-qHdQ4" target="_blank" >
                 Ticket
               </a>
             </p>
@@ -48,14 +47,19 @@ export default function Footer() {
         </div>
         <div className={classes.footerelement}>
           <h2 className={classes.titre}>SUIVEZ-NOUS</h2>
-          <SocialMedia size="28px" />
+          <SocialMedia
+              size="28px"
+              fb={"https://www.facebook.com/events/1105043313793907/?active_tab=discussion"}
+              insta={"https://www.instagram.com/junior_entreprise_insat"}
+              linkedin={"https://www.linkedin.com/company/junior-entreprise-insat/"}
+          />
         </div>
       </div>
       <div className={classes.footer2}>
         <hr />
         <p>
           <CopyrightIcon className={classes.icon2} />
-          2022, Junior Entreprise INSAT, Tous les droits sont réservés
+          2023, Junior Entreprise INSAT, Tous les droits sont réservés
         </p>
       </div>
     </div>

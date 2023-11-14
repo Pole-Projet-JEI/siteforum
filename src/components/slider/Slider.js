@@ -4,30 +4,21 @@ import BtnSlider from "./BtnSlider";
 import Landing from "../landing/Landing";
 import Axios from "axios";
 export default function Slider() {
-  const [dataSlider, setDataSlider] = useState([]);
-  useEffect(() => {
-    Axios.get("http://localhost:5000/galerie/")
-      .then((response) => {
-        setDataSlider(response.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
-  // dataSlider=[
-  //     {
-  //         "id":0,
-  //         "img":"s1"
-  //     },
-  //     {
-  //         "id":1,
-  //         "img":"s2"
-  //     },
-  //     {
-  //         "id":2,
-  //         "img":"s3"
-  //     },
-  // ]
+
+  const dataSlider=[
+      {
+          "id":0,
+          "img":"s1"
+      },
+      {
+          "id":1,
+          "img":"s2"
+      },
+      {
+          "id":2,
+          "img":"s3"
+      },
+  ]
   const [slideIndex, setSlideIndex] = useState(1);
 
   const nextSlide = () => {
@@ -52,7 +43,7 @@ export default function Slider() {
 
   return (
     <div>
-      {slideIndex}
+      {""}
 
       <Landing
         subtitle="FORUM"

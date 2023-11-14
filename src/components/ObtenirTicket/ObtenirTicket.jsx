@@ -52,7 +52,7 @@ export default function ObtenirTicket(props) {
     une conférence des plus intéressante. Inscrivez-vous maintenant et
     faites décoller votre carrière professionnelle.
   </p>
-  <Button content="OBTENEZ VOTRE TICKET" hover="#F9138F" color="#004059" link="https://www.eventbrite.com/cc/forum-insat-entreprise-workshops-1381869?fbclid=IwAR2F8TxJC7nN-bGqhJVJb95N2w555NdGdInSds7URauoXfXX0wYGbqh4iuA"/>
+  <Button content="PARTICIPER" hover="#F9138F" color="#004059" link="https://fabskill.com/fr/event/22?fbclid=IwAR0UmDAXnBS7AJxcOnAayMbaqYZyuU0pJOgralx9yYdy-OlgJg_fl-qHdQ4"/>
 </div>
 
 <div className={classes.card}  >

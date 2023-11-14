@@ -19,8 +19,9 @@
   align-items: center;
   padding: 30px;
   padding-top: 0;
-  
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .descriptionContainer{
     display: flex;
@@ -37,6 +38,7 @@
   color: #01212E;
   text-align: justify;
 }
+
 .descriptionTitle{
   letter-spacing: 5px;
     word-spacing: 5px;

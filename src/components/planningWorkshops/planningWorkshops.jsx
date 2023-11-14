@@ -86,7 +86,7 @@ export default function PlanningWorkshops(props) {
           icon={<FaMicrophone />}
         >
           <div className={classes.timeLineElementContainer}>
-            <h3 className={classes.verticalTimelineElementTitle}>Pitching Hackathon</h3>
+            <h3 className={classes.verticalTimelineElementTitle}>Hackathon</h3>
           </div>
         </VerticalTimelineElement>
 

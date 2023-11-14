@@ -77,20 +77,20 @@ export default function PlanningHackathon() {
           contentArrowStyle={{
             borderRight: "7px solid  #36c13148",
           }}
-          date="Friday - 21h00"
+          date="Saturday - 20h00"
           dateClassName={classes.date}
           iconStyle={{ background: "#fff", color: "#0e920a" }}
           icon={<FaStar />}
         >
           <div className={classes.timeLineElementContainer}>
             <h3 className={classes.verticalTimelineElementTitle}>
-              Workshop UI/UX
+              AI Integration In Health Care
             </h3>
             <h4 className={classes.verticalTimelineElementSubtitle}>
-              Mr Anas Tradi
+              Mr Houssem Ayadi
             </h4>
             <p>
-            Nowadays, we constantly hear about UI/UX design, which has become the key to a well-designed and developed website.UI/UX is important because it provides your users with easy navigation and engaging content, which helps to increase consumer satisfaction.
+              Integrating AI in healthcare involves leveraging artificial intelligence technologies to enhance medical processes, diagnosis, and treatment. This integration enables the analysis of vast amounts of health data, facilitates predictive analytics for diseases, and supports personalised patient care. By automating tasks and providing valuable insights, AI contributes to improved efficiency and better decision-making in the healthcare sector.
             </p>
           </div>
         </VerticalTimelineElement>
@@ -102,17 +102,17 @@ export default function PlanningHackathon() {
           contentArrowStyle={{
             borderRight: "7px solid  #36c13148",
           }}
-          date="Wednesday Morning"
+          date="Tuesday - 20h00"
           dateClassName={classes.date}
           iconStyle={{ background: "#fff", color: "#0e920a" }}
           icon={<FaMicroscope />}
         >
           <div className={classes.timeLineElementContainer}>
             <h3 className={classes.verticalTimelineElementTitle}>
-              Workshop Pitching (in person)
+              Workshop Pitching
             </h3>
             <h4 className={classes.verticalTimelineElementSubtitle}>
-              Mrs Asma selmi
+              Mrs Samar Abidi
             </h4>
             <p>
             Pitching plays a crucial role in the business world, whether it is selling an idea or seeking additional funding, attracting excellent co-founders or recruiting the best employees.
@@ -144,7 +144,7 @@ export default function PlanningHackathon() {
           contentArrowStyle={{
             borderRight: "7px solid  #36c13148",
           }}
-          date="Wednesday 14h00"
+          date="Wednesday 17h45"
           dateClassName={classes.date}
           iconStyle={{ background: "#fff", color: "#0e920a" }}
           icon={<FaBahai />}

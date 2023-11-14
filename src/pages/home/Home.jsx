@@ -12,7 +12,7 @@ import FormulaireContact from '../../components/formulaireContact/FormulaireCont
 import { motion } from 'framer-motion';
 import Team from '../../components/team/Team';
 import JoinUs from '../../components/joinus/joinus';
-import { ocData } from './ocData';
+import {ocData, ocAdData, committeePresident} from './data';
 
 function Home(props) {
   
@@ -35,11 +35,13 @@ function Home(props) {
         <WhoAreWe />
         <ObtenirTicket />
       
-        <Counter first={{number:30,title:"Entreprises"}} second={{number:35,title:"Participants au Hackathon"}} third={{number:2000,title:"Présents au Forum"}} fourth={{number:8,title:"Workshop Offerts"}} />
+        <Counter first={{number:35,title:"Entreprises"}} second={{number:120,title:"Participants au Hackathon"}} third={{number:2000,title:"Présents au Forum"}} fourth={{number:12,title:"Workshop Offerts"}} />
         <Landing subtitle="NOS EXPOSANTS" title="LES EXPOSANT DU FORUM" color="#004059"/>
         <Exposant />
         <Landing subtitle="NOTRE ÉQUIPE" title="NOTRE COMITÉ D'ORGANISATION" color="#004059"/>
-        <Team data={ocData} />
+        <Team data={committeePresident}/>
+        <Team data={ocData}/>
+        <Team data={ocAdData} />
 
         <FormulaireContact />
         <div id="formContact">

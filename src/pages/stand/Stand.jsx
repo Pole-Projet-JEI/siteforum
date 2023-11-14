@@ -43,10 +43,10 @@ export default function Stand(props) {
       </div>
       <InsatIntro />
       <Counter
-        first={{ number: 6, title: "Entreprises" }}
-        second={{ number: 40, title: "Clubs Actifs" }}
-        third={{ number: 3000, title: "Etudiants" }}
-        fourth={{ number: 300, title: "Evénements Par An" }}
+        first={{ number: 24, title: "Convention D'Entreprise" }}
+        second={{ number: 30, title: "Clubs Actifs" }}
+        third={{ number: 2000, title: "Etudiants" }}
+        fourth={{ number: 100, title: "Evénements Par An" }}
       />
       
       <Filiere image={chimie} name="CHIMIE INDUSTRIELLE" description="La chimie est aujourd’hui omniprésente dans les industries comme dans notre quotidien.

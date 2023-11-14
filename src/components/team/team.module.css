@@ -1,10 +1,9 @@
 .slider {
-    
-    margin: auto;
     position: relative;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 80px;
+    padding: 0px 100px 0px;
 }
 
 .slide_track {
@@ -12,6 +11,7 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    justify-content: center;
     /* animation: scroll 40s linear infinite; */
 }
 /* 
@@ -44,7 +44,7 @@
     color: #514D4D;
 }
 @media (max-width: 500px) {
-.slide_track{
-    flex-direction: column;
-}
+/*.slide_track{*/
+/*    flex-direction: column;*/
+/*}*/
 }
