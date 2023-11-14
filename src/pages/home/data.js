@@ -66,5 +66,12 @@ export const committeePresident = [
         title: "Vice présidente du comité",
         photo: "/organisateur/Ines.jpg",
         description: "",
+    },
+    {
+        firstname: "Rayen",
+        lastname: "Besbes",
+        title: "Responsable Marketing-MediaOn",
+        photo: "/organisateur/rayenbesbes.jpg",
+        description: "",
     }
 ]
