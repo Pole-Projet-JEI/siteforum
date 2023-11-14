@@ -1,7 +1,7 @@
 export const DataQuestion = [
     {
         question: "C'est quoi le forum ?",
-        reponse : "C’est une opportunité qui vous permettra de rencontrer une panoplie d’entreprises qui vont vous proposer leurs opportunités de stages de fin d’études,de contrats de professionnalisation e d’emplois à temps partiel."
+        reponse : "C’est une opportunité qui vous permettra de rencontrer une panoplie d’entreprises qui vont vous proposer leurs opportunités de stages de fin d’études,de contrats de professionnalisation et d’emplois à temps partiel."
     },
     {
         question: "C’est Quoi L'intérêt Du Forum ?",
@@ -9,7 +9,7 @@ export const DataQuestion = [
     },
     {
         question: "Quand Et Où Aura-T-Il Lieu ?",
-        reponse : " Le forum sera hybridée. La partie présentielle se déroulera à l’INSAT au Centre Urbain Nord, Tunis. La partie en ligne sera assurée sur fabevent.io et ce le Mercredi 24 Novembre à partir de 8H30."
+        reponse : " Le forum sera hybridée. La partie présentielle se déroulera à l’INSAT au Centre Urbain Nord, Tunis. La partie en ligne sera assurée sur fabskill.com/fr/event/22 et ce le Mercredi 15 Novembre à partir de 8H."
     },
     {
         question: "Qui Peut Y Assister ?",

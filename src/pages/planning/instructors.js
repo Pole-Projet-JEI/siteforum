@@ -82,6 +82,12 @@ export const instructors=[
 
 export const instructors2023 = [
   {
+    firstname:"Aymen",
+    lastname:"Ben Othmane",
+    title:"Coach-consultant en développement, Master Coach en techniques de Leadership",
+    photo:"/formateur/AymenBenOthmane.png",
+  },
+  {
     firstname:"Montassar",
     lastname:"Ghazouani",
     title:"Business Development Manager At Digimytch",
@@ -98,12 +104,6 @@ export const instructors2023 = [
     lastname:"Homrani",
     title:"CEO & Founder Of Le Labo Marketing",
     photo:"/formateur/amelle_homrani.png",
-  },
-  {
-    firstname:"Elyes",
-    lastname:"Guermazi",
-    title:"Young Tunisian Entrepreneur",
-    photo:"/formateur/elyes_guermazi.png",
   },
   {
     firstname:"Ahmed",
@@ -168,11 +168,11 @@ export const workshops = [
     citation:"Le marketing numérique fait référence à l'utilisation de canaux, de plateformes et de technologies en ligne pour promouvoir et annoncer des produits, des services ou des marques. Il englobe un large éventail de stratégies, notamment l'optimisation des moteurs de recherche (SEO), le marketing sur les réseaux sociaux, le marketing de contenu, le marketing par courrier électronique et la publicité en ligne, dans le but d'atteindre et d'impliquer un public cible dans l'espace numérique."
   },
   {
-    firstname:"Elyes",
-    lastname:"Guermazi",
-    workshop:"Communication Skills",
+    firstname:"Aymen",
+    lastname:"Ben Othmane",
+    workshop:"Situational Leadership",
     lieuEtDate:"Salle De Conférence 2B63 9:00 --> 10:30",
-    citation:"Les compétences en communication englobent la capacité de transmettre des informations de manière efficace et claire, que ce soit par des moyens oraux ou écrits."
+    citation:"La formation en leadership situationnel vise à développer les compétences des leaders pour s'adapter aux besoins changeants de leur équipe. Ce modèle reconnaît que différents niveaux de compétence nécessitent des approches de leadership variées. Les leaders apprennent à ajuster leur style, passant du directif au participatif, en fonction du niveau de maturité de chaque membre de l'équipe."
   },
   {
     firstname:"Nour",

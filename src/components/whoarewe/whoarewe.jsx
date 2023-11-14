@@ -16,9 +16,9 @@ export default function WhoAreWe() {
 
           <hr />
           <p>
-            Le Forum INSAT Entreprise, qui en est à sa quatrième édition, est
+            Le Forum INSAT Entreprise, qui en est à sa cinquième édition, est
             organisé en collaboration avec la Direction de la vie universitaire
-            et des relations environnementales et se tiendra à l'INSAT le 16
+            et des relations environnementales et se tiendra à l'INSAT le 15
             novembre. You at the center. Votre avenir est notre plus grande
             préoccupation et c'est pourquoi nous avons tout fait pour vous aider
             à entamer la carrière de vos rêves.

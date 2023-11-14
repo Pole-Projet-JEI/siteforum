@@ -35,7 +35,7 @@ export default function PlanningHackathon() {
           contentArrowStyle={{
             borderRight: "7px solid  #36c13148",
           }}
-          date="Friday - 21h00"
+          date="Friday - 20h00"
           dateClassName={classes.date}
           iconStyle={{ background: "#fff", color: "#0e920a" }}
           icon={<FaGrinStars />}
